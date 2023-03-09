@@ -1,0 +1,13 @@
+.ant-table-wrapper .ant-table-thead >tr>th{
+    background-color: rgb(12, 53, 92);
+    color: white;
+  }
+  .ant-table-cell::before{
+  display: none;
+  }
+  
+  @media only screen and (max-width: 815px)  {
+  .Table{
+    overflow-x: scroll;
+  }
+  }

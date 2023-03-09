@@ -1,0 +1,54 @@
+.Card-Content{
+    text-align: left;
+}
+.Card_content_header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Card-Title{
+    margin-bottom: -10px;
+}
+.Card-subheading{
+    font-size: 9px;
+    font-weight: bold;
+    color: rgb(173 173 173);
+}
+.card-api-context{
+    margin-bottom: -13px;
+}
+.GridViewCards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+@media only screen and (min-width: 601px)  {
+    .Grid-Card{
+        min-width: 320px;
+    }
+
+}
+@media only screen and (max-width: 600px)  {
+    .Grid-Card{
+        max-width: 320px;
+    }
+
+}
+.Grid-Card-rating{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 354px) and (min-width: 320px)  {
+    .Card-Title{
+   font-size: medium;
+    }
+}
+@media only screen and (max-width: 319px)  {
+    .Card-Title{
+        font-size: small;
+         }
+}

@@ -1,0 +1,39 @@
+
+.Menu-Header-Container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+flex-wrap: wrap;
+}
+.Menu-Header-Inner{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ViewChangeIcon{
+    font-size: 20px;
+}
+.viewChangeInactive{
+    color: gray;
+}
+.ListViewIcons{
+    color: #0f72ad;
+    font-size: 20px;
+}
+
+.API-icon{
+font-size: 40px;
+color: rgb(12, 53, 92);
+}
+.total-api{
+    display: flex;
+    flex-direction: column;
+}
+.api-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
