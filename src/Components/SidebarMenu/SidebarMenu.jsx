@@ -71,17 +71,20 @@ const menu3 =[
     ]),
 ];
 const menu2 =[
-    getItem('Overview', '1', <HomeFilled />),
-    getItem('Subscriptions', '2', <HomeFilled />),
-    getItem('Try Out', '3', <HomeFilled />),
-    getItem('Comments', '4', <HomeFilled />),
-    getItem('Documentation', '5', <HomeFilled />),
-    getItem('SDKs', '6', <HomeFilled />),
+    getItem('Overview', 'overview', <HomeFilled />),
+    getItem('Subscriptions', 'subscription', <HomeFilled />),
+    getItem('Try Out', 'tryout', <HomeFilled />),
+    getItem('Comments', 'comments', <HomeFilled />),
+    getItem('Documentation', 'documentation', <HomeFilled />),
+    getItem('SDKs', 'sdks', <HomeFilled />),
 ];
 
-const SidebarMenu = ({ChangeComponent}) => {
+const SidebarMenu = ({ChangeComponent,selectedComponent}) => {
     const [changeMenu, setChangeMenu] = useState("api");
     const [menu, setMenu] = useState(menu2);
+    const onClick = (e) => {
+        ChangeComponent(e.key);
+      };
     return (
         <Sider
             breakpoint="lg"
@@ -103,7 +106,7 @@ const SidebarMenu = ({ChangeComponent}) => {
                 <Button size="small" className={changeMenu==="application"?'api-btn active':"api-btn"} onClick={(e)=>{e.preventDefault(); setChangeMenu("application"); setMenu(menu3)}}> Applications</Button>
                 </div>
             </div>
-            <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={menu} />
+            <Menu theme="dark" onClick={onClick} selectedKeys={[selectedComponent]} mode="inline" items={menu} />
         </Sider>
     )
 }

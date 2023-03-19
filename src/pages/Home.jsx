@@ -13,21 +13,19 @@ import SDKs from '../Components/APIComponents/SDKs';
 const { Content } = Layout;
 const Home = () => {
   const [view, setView] = useState("ListView");
-  const [selectedComponent, setSelectedComponent] = useState("SDKs");
+  const [selectedComponent, setSelectedComponent] = useState("overview");
   const handleView = (value) => {
     setView(value);
   }
-  // const {
-  //   token: { colorBgContainer },
-  // } = theme.useToken();
-  const ChangeComponent=(item)=>{
-setSelectedComponent(item);
+
+  const ChangeComponent = (item) => {
+    setSelectedComponent(item);
   }
   return (
     <Layout style={{ minHeight: "100vh" }}>
 
       {/* SideBar Menu */}
-      <SidebarMenu ChangeComponent={ChangeComponent}/>
+      <SidebarMenu ChangeComponent={ChangeComponent} selectedComponent={selectedComponent}/>
       <Layout>
         {/* Main Nav Component*/}
         <MainNav />
@@ -40,7 +38,7 @@ setSelectedComponent(item);
           }}
         >
           {
-            selectedComponent==="overview"&&
+            selectedComponent === "overview" &&
             <div>
               {/* Second Header*/}
               <MenuHeader handleView={handleView} view={view} />
@@ -52,38 +50,38 @@ setSelectedComponent(item);
             </div>
           }
           {
-            selectedComponent==="subscription"&&
+            selectedComponent === "subscription" &&
             <div>
               {/* Subscrition*/}
-            <Subscriptions/>
+              <Subscriptions />
             </div>
           }
           {
-            selectedComponent==="tryout"&&
+            selectedComponent === "tryout" &&
             <div>
               {/* Try Out*/}
-            <TryOut/>
+              <TryOut />
             </div>
           }
           {
-            selectedComponent==="comments"&&
+            selectedComponent === "comments" &&
             <div>
               {/* Comments*/}
-            <Comments/>
+              <Comments />
             </div>
           }
           {
-            selectedComponent==="documentation"&&
+            selectedComponent === "documentation" &&
             <div>
               {/* Documentation*/}
-            <Documentation/>
+              <Documentation />
             </div>
           }
           {
-            selectedComponent==="SDKs"&&
+            selectedComponent === "sdks" &&
             <div>
               {/* SDKs*/}
-            <SDKs/>
+              <SDKs />
             </div>
           }
 
