@@ -7,10 +7,11 @@ import SidebarMenu from '../Components/SidebarMenu/SidebarMenu';
 import GridView from '../Components/APIComponents/GridView/GridView';
 import Subscriptions from '../Components/APIComponents/Subscriptions';
 import TryOut from '../Components/APIComponents/TryOut';
+import Comments from '../Components/APIComponents/Comments';
 const { Content } = Layout;
 const Home = () => {
   const [view, setView] = useState("ListView");
-  const [selectedComponent, setSelectedComponent] = useState("tryout");
+  const [selectedComponent, setSelectedComponent] = useState("comments");
   const handleView = (value) => {
     setView(value);
   }
@@ -60,6 +61,13 @@ setSelectedComponent(item);
             <div>
               {/* Try Out*/}
             <TryOut/>
+            </div>
+          }
+          {
+            selectedComponent==="comments"&&
+            <div>
+              {/* Comments*/}
+            <Comments/>
             </div>
           }
 
