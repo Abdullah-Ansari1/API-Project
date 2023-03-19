@@ -8,10 +8,11 @@ import GridView from '../Components/APIComponents/GridView/GridView';
 import Subscriptions from '../Components/APIComponents/Subscriptions';
 import TryOut from '../Components/APIComponents/TryOut';
 import Comments from '../Components/APIComponents/Comments';
+import Documentation from '../Components/APIComponents/Documentation';
 const { Content } = Layout;
 const Home = () => {
   const [view, setView] = useState("ListView");
-  const [selectedComponent, setSelectedComponent] = useState("comments");
+  const [selectedComponent, setSelectedComponent] = useState("documentation");
   const handleView = (value) => {
     setView(value);
   }
@@ -68,6 +69,13 @@ setSelectedComponent(item);
             <div>
               {/* Comments*/}
             <Comments/>
+            </div>
+          }
+          {
+            selectedComponent==="documentation"&&
+            <div>
+              {/* Documentation*/}
+            <Documentation/>
             </div>
           }
 
