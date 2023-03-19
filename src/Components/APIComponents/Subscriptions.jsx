@@ -2,7 +2,6 @@ import React from 'react'
 import HeaderTitle from './HeaderTitle'
 import { Select, Table } from 'antd';
 import {
-  SettingFilled,
   StarFilled
 } from '@ant-design/icons';
 const columns = [

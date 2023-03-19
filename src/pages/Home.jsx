@@ -6,10 +6,11 @@ import MenuHeader from '../Components/MenuHeader/MenuHeader';
 import SidebarMenu from '../Components/SidebarMenu/SidebarMenu';
 import GridView from '../Components/APIComponents/GridView/GridView';
 import Subscriptions from '../Components/APIComponents/Subscriptions';
+import TryOut from '../Components/APIComponents/TryOut';
 const { Content } = Layout;
 const Home = () => {
   const [view, setView] = useState("ListView");
-  const [selectedComponent, setSelectedComponent] = useState("subscription");
+  const [selectedComponent, setSelectedComponent] = useState("tryout");
   const handleView = (value) => {
     setView(value);
   }
@@ -50,8 +51,15 @@ setSelectedComponent(item);
           {
             selectedComponent==="subscription"&&
             <div>
-              {/* Second Header*/}
+              {/* Subscrition*/}
             <Subscriptions/>
+            </div>
+          }
+          {
+            selectedComponent==="tryout"&&
+            <div>
+              {/* Try Out*/}
+            <TryOut/>
             </div>
           }
 

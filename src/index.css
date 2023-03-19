@@ -88,3 +88,120 @@ body {
     gap: 1rem;
   }
 }
+
+/* TryOut */
+.tryout-header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.radio-btn{
+  height: 1rem;
+  accent-color: #0b1b2d;
+  width: 1rem;
+
+}
+.radio-div{
+  display: flex;
+  align-items: center;
+}
+.radio-div label{
+  margin-right: 1rem;
+}
+.GetKey-btn{
+  border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    background: #d9e7ef;
+    color: #374151;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: -13px;
+}
+
+.access-tokenhint{
+  margin-top: 5px;
+  font-size: smaller;
+  font-weight: 600;
+  color: #899aac;
+}
+.tryout-right-header{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tryout-right-header input{
+  padding: 0.5rem !important;
+}
+
+.tryout-select .ant-select-selector{
+  font-size: larger;
+  align-items: center;
+  height: 3rem !important;
+}
+.default-main{
+  background: #f2f3f6;
+  padding: 1rem;
+  margin-top: 2rem;
+  max-width: 50rem;
+  border-radius: 10px;
+  color: #16375a;
+}
+.bars{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 12px;
+    margin: 0.5rem 0;
+}
+.get{
+  background: #b4cfdf;
+}
+.get button{
+  background: #1672ec;
+  color: white;
+}
+.put{
+  background:#f2ecd2;
+}
+.put button{
+  background:#d4b011;
+  color: white;
+}
+.post{
+  background: #e5fcda;
+}
+.post button{
+  background:#2ab930;
+  color: white;
+}
+.delete{
+  background: #eec6c7;
+}
+.delete button{
+  background:#da100b;
+  color: white;
+}
+.patch{
+  background: #e5fcda;
+}
+.patch button{
+  background:#2ab930;
+  color: white;
+}
+.bars button{
+  padding: 0.4rem 2rem;
+  font-size: large;
+  border-radius: 6px;
+  margin-right: 1rem;
+  border: none;
+  width: 7rem;
+}
+.bars span{
+  font-size: large;
+  font-weight: 500;
+
+}
