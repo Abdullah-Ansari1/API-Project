@@ -9,10 +9,11 @@ import Subscriptions from '../Components/APIComponents/Subscriptions';
 import TryOut from '../Components/APIComponents/TryOut';
 import Comments from '../Components/APIComponents/Comments';
 import Documentation from '../Components/APIComponents/Documentation';
+import SDKs from '../Components/APIComponents/SDKs';
 const { Content } = Layout;
 const Home = () => {
   const [view, setView] = useState("ListView");
-  const [selectedComponent, setSelectedComponent] = useState("documentation");
+  const [selectedComponent, setSelectedComponent] = useState("SDKs");
   const handleView = (value) => {
     setView(value);
   }
@@ -76,6 +77,13 @@ setSelectedComponent(item);
             <div>
               {/* Documentation*/}
             <Documentation/>
+            </div>
+          }
+          {
+            selectedComponent==="SDKs"&&
+            <div>
+              {/* SDKs*/}
+            <SDKs/>
             </div>
           }
 

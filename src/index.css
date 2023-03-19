@@ -237,3 +237,35 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* SDKS */
+.card-sdks{
+  background: aliceblue;
+  width: 32%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 10px;
+  
+}
+.sdks-content{
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 10px 10px;
+
+}
+.imgsection{
+  padding:1rem;
+  text-align: center;
+  height: 250px;
+}
+.Skds{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.download-sdks{
+  display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
