@@ -11,3 +11,6 @@
     overflow-x: scroll;
   }
   }
+  .listview-table  .ant-table-row{
+    background: #e6e9ef !important;
+  }

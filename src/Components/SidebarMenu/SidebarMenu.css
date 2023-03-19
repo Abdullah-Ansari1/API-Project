@@ -27,3 +27,27 @@
     
     }
   }
+.button-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.api-btn{
+  width: 50%;
+  background: none !important;
+  border: none !important;
+  color: aliceblue;
+}
+.active{
+  background: aliceblue !important;
+  color: black;
+  font-weight: 400;
+  font-size: small;
+}
+  /* .ant-menu-item-selected > .ant-menu-item-icon{
+    color: blue !important;
+  }
+  .ant-menu-item-selected{
+    background: inherit !important;
+  } */

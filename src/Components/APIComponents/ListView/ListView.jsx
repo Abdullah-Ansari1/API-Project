@@ -5,7 +5,7 @@ import './ListView.css'
 const ListView = () => {
   return (
     <div className="Table">
-    <Table columns={columns} dataSource={data} />
+    <Table columns={columns} dataSource={data} className="listview-table"/>
     </div>
   )
 }

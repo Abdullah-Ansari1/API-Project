@@ -1,9 +1,90 @@
-#searchInput{
+#searchInput {
   background-color: aliceblue;
 }
-.ant-select .ant-select-arrow {
-top: 36% !important;
-}
-body{
+
+/* .ant-select .ant-select-arrow {
+  top: 36% !important;
+} */
+
+body {
   margin: 0;
+}
+
+
+/* Header Title */
+.header-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-item {
+  font-weight: 400;
+  color: #253d55 !important;
+}
+
+.title-item-api {
+  font-weight: 400;
+  color: rgb(167, 167, 167);
+}
+
+/* Subscription  */
+.subscription-title {
+  background: aliceblue;
+  width: fit-content;
+  padding: 0.5rem;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.subscription-info {
+  font-size: medium;
+  font-weight: 500;
+  color: #6e8298;
+  margin-bottom: 1rem;
+}
+
+.subscription-select {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10rem;
+  margin: 3rem auto;
+}
+
+.select-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.select-main .ant-select-arrow {
+  color: #506983;
+}
+
+.select-main .ant-select-selection-item {
+  color: #506983;
+  font-weight: 500;
+}
+.subscribe-btn{
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  background: #16375a;
+  color: aliceblue;
+  border-radius: 7px;
+}
+.subscription-table .ant-table-row{
+  background-color: aliceblue !important;
+}
+  
+@media only screen and (max-width: 815px)  {
+  .subscription-table{
+    overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 600px){
+  .subscription-select {
+    gap: 1rem;
+  }
 }
