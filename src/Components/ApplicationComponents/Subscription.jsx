@@ -1,16 +1,18 @@
 import React from 'react'
 import HeaderTitle from "./HeaderTitle";
-import {InfoCircleFilled } from '@ant-design/icons';
-const Subscription = () => {
+import { InfoCircleFilled } from '@ant-design/icons';
+import SubscribeApis from './SubscribeApis';
+const Subscription = ({ handleSubscribeApi,openSubscribeModal }) => {
   return (
     <div>
-            <HeaderTitle />
+      <SubscribeApis openSubscribeModal={openSubscribeModal} handleSubscribeApi={handleSubscribeApi}/>
+      <HeaderTitle />
       <div className="productionkey-title">
-        <div style={{display:"flex",gap:"2rem", alignItems:"center"}}>
-        <h3>Sandbox OAuth2 Key</h3> 
-        <span>
-        Subscribe APIs 
-        </span>
+        <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
+          <h3>Sandbox OAuth2 Key</h3>
+          <span onClick={() => handleSubscribeApi(true)} className="link-subscribe">
+            Subscribe APIs
+          </span>
         </div>
       </div>
       <div className="noComment-main">

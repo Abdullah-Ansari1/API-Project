@@ -1,6 +1,9 @@
 #searchInput {
   background-color: aliceblue;
 }
+#searchSubscriptionApi {
+  background-color: aliceblue;
+}
 
 /* .ant-select .ant-select-arrow {
   top: 36% !important;
@@ -148,6 +151,7 @@ body {
   align-items: center;
   height: 3rem !important;
 }
+
 
 .default-main {
   background: #f2f3f6;
@@ -865,4 +869,106 @@ margin-top: -2.1rem !important;
 .apikey-icon{
   font-size: 2rem;
     padding-right: 1rem;
+}
+
+/* subscribeApismodal */
+.subscripeapi-status{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.subscribeApis-table .ant-table-thead>tr>th {
+  background-color: #f3f4f7 !important;
+  color: black !important;
+}
+
+.subscribeApis-table .ant-table-row {
+  background-color: #f3f4f7 !important;
+  /* color: black !important; */
+}
+.subscribetable-main{
+  background-color: #f3f4f7;
+  width: fit-content;
+  border-radius: 1rem;
+}
+.subscripeApi-Modal .ant-modal-content{
+  width: fit-content !important;
+}
+.subscripeApi-Modal .ant-table-cell{
+ font-size: small;
+}
+.subscripeApi-Modal .ant-table-tbody .ant-table-cell{
+ font-size: small;
+ color: #96a5b5;
+ font-weight: 400;
+ min-width: 10rem;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-disabled .ant-pagination-item-link{
+color: white !important;
+background: #dbdce0 !important;
+font-size: 1rem;
+}
+/* .subscripeApi-Modal .ant-pagination .ant-pagination-disabled{
+background: #dbdce0 !important;
+} */
+.subscripeApi-Modal .ant-pagination .ant-pagination-item-link{
+background: #FFF !important;
+font-size: 1rem;
+color: #96a5b5 !important;
+}
+.subscripeApi-Modal .ant-pagination{
+padding-right: 1rem;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item {
+background: white !important;
+font-weight: 500 !important;
+color: #96a5b5 !important;
+border: none !important;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item:hover {
+background: aliceblue!important;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item a{
+font-weight: 500 !important;
+color: #96a5b5 !important;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item-active {
+background: #16375a !important;
+font-weight: 500 !important;
+color: #96a5b5 !important;
+border: none !important;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item-active:hover{
+  background: #16375a !important;
+}
+.subscripeApi-Modal .ant-pagination .ant-pagination-item-active a {
+font-weight: 500 !important;
+color: #ffffff !important;
+}
+
+.subscribeApis-btn{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background: #16375a;
+}
+.subscribeApi-select .ant-select-selector {
+  font-size: 1rem !important;
+  height: 2.5rem !important;
+  align-items: center !important;
+  width: 9rem !important;
+  border: 1px solid black !important;
+}
+.subscribeapi-title{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -1.2rem;
+}
+.link-subscribe{
+  color: #1672ec;
+  cursor: pointer;
 }

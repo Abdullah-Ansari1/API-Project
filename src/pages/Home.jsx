@@ -23,12 +23,12 @@ import SandboxApikey from "../Components/ApplicationComponents/SandboxApikey";
 import Subscription from "../Components/ApplicationComponents/Subscription";
 const { Content } = Layout;
 const Home = () => {
-  const [changeMenu, setChangeMenu] = useState("application");
+  const [changeMenu, setChangeMenu] = useState("api");
   const [view, setView] = useState("ListView");
   const [selectedComponent, setSelectedComponent] = useState(
     changeMenu === "api" ? "overview" : ""
   );
-
+  const [openSubscribeModal, setOpenSubscribeModal] = useState(true);
   const [editApplication, setEditApplication] = useState(false);
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const handleDeleteModal = (value) => {
@@ -49,6 +49,9 @@ const Home = () => {
   const handleChangeMenu = (value) => {
     setChangeMenu(value);
   };
+  const handleSubscribeApi=(value)=>{
+    setOpenSubscribeModal(value);
+  }
   return (
     <Layout style={{ minHeight: "100vh" }}>
       {/* SideBar Menu */}
@@ -187,7 +190,7 @@ const Home = () => {
                 changeMenu === "application" && (
                   <div>
                     {/* Overview Application*/}
-                    <Subscription/>
+                    <Subscription handleSubscribeApi={handleSubscribeApi} openSubscribeModal={openSubscribeModal}/>
                   </div>
                 )}
             </div>
