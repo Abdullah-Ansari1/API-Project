@@ -21,6 +21,7 @@ import SandboxKeys from "../Components/ApplicationComponents/SandboxKeys";
 import SandboxOAuth from "../Components/ApplicationComponents/SandboxOAuth";
 import SandboxApikey from "../Components/ApplicationComponents/SandboxApikey";
 import Subscription from "../Components/ApplicationComponents/Subscription";
+import SubscriptionUpdateModal from "../Components/ApplicationComponents/SubscriptionUpdateModal";
 const { Content } = Layout;
 const Home = () => {
   const [changeMenu, setChangeMenu] = useState("api");
@@ -31,8 +32,12 @@ const Home = () => {
   const [openSubscribeModal, setOpenSubscribeModal] = useState(true);
   const [editApplication, setEditApplication] = useState(false);
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
+  const [updateSubscriptionModal, setUpdateSubscriptionModal] = useState(false);
   const handleDeleteModal = (value) => {
     setOpenDeleteModal(value);
+  };
+  const handleUpdateSubscriptionModal = (value) => {
+    setUpdateSubscriptionModal(value);
   };
   const handleEditSection = (value) => {
     setEditApplication(value);
@@ -123,6 +128,8 @@ const Home = () => {
                 handleDeleteModal={handleDeleteModal}
                 openDeleteModal={openDeleteModal}
               />
+              {/* SubscriptionApi Modal */}
+              <SubscriptionUpdateModal handleUpdateSubscriptionModal={handleUpdateSubscriptionModal} updateSubscriptionModal={updateSubscriptionModal}/>
               {/* My Application */}
               {!editApplication && selectedComponent === "" && (
                 <MyApplication
@@ -190,7 +197,7 @@ const Home = () => {
                 changeMenu === "application" && (
                   <div>
                     {/* Overview Application*/}
-                    <Subscription handleSubscribeApi={handleSubscribeApi} openSubscribeModal={openSubscribeModal}/>
+                    <Subscription handleSubscribeApi={handleSubscribeApi} openSubscribeModal={openSubscribeModal} handleDeleteModal={handleDeleteModal} handleUpdateSubscriptionModal={handleUpdateSubscriptionModal}/>
                   </div>
                 )}
             </div>

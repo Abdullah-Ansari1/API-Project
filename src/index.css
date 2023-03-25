@@ -920,6 +920,14 @@ color: #96a5b5 !important;
 .subscripeApi-Modal .ant-pagination{
 padding-right: 1rem;
 }
+.subscripeApi-Modal .ant-modal-close{
+border-radius: 50% !important;
+background: black !important;
+color: white !important;
+}
+.subscripeApi-Modal .ant-modal-close .ant-modal-close-x{
+font-size: 13px;
+}
 .subscripeApi-Modal .ant-pagination .ant-pagination-item {
 background: white !important;
 font-weight: 500 !important;
@@ -971,4 +979,36 @@ color: #ffffff !important;
 .link-subscribe{
   color: #1672ec;
   cursor: pointer;
+}
+.subscriptionapi-table .ant-table-tbody{
+  background: #e6e9ef;
+}
+.subscriptionapi-table{
+  background: #e6e9ef;
+  border-radius: 0.5rem;
+}
+.ant-table-tbody >tr >td{
+  border-bottom: none !important;
+}
+.ant-table-wrapper table{
+  border-radius: 8px !important;
+}
+.tset-data{
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.subscriptionapi-table .ant-table-container table>thead>tr:first-child>*:last-child {
+  width: 1rem;
+}
+.subscriptionModal-select{
+  width: 100% !important;
+}
+.subscriptionModal-select .ant-select-selector{
+  font-size: larger;
+  align-items: center;
+  height: 3rem !important;
+}
+.updateSubscription-Modal{
+  margin-top: 200px;
 }
