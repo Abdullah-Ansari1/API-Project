@@ -109,7 +109,7 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
             prefix={<SearchOutlined style={{ opacity: "0.2" }} />}
             id="searchInput"
             allowClear={true}
-            style={{ backgroundColor: "aliceblue", maxWidth:"25vw" }}
+            style={{ backgroundColor: "#D9E7EF", maxWidth:"25vw" }}
           />
           <button>Search</button>
         </div>

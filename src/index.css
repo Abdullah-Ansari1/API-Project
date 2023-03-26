@@ -1,5 +1,208 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+ --Tertiary:#34ADF4;
+ --primary-color:#16375A;
+ --secondary-color:#2373A2;
+ --text-body:#4E4B66;
+ /* Indication Color */
+ --indication-blue:#1672EC;
+ --indication-blue-hover:#0F56B3;
+ --indication-green:#2AB930;
+ --indication-green-hover:#1F8B24;
+ --indication-yellow:#F0D042;
+ --indication-yellow-hover:#D4B011;
+ --indication-red:#F5413D;
+ --indication-red-hover:#DA100B;
+
+ /* Gray Scale Color */
+ --gray-scale-active-title:#1E1F21;
+ --gray-scale-body:#374151;
+ --gray-scale-divider:#C5C7D0;
+ --gray-scale-uigray:#E6E9EF;
+ --gray-scale-disable:rgba(230, 233, 239, 0.5);
+ --gray-scale-white:#FFFFFF;
+
+/* Primary Colors Tone */
+--primary-color-00:#FFFFFF;
+--primary-color-10:#D6DCE2;
+--primary-color-20:#B0BBC7;
+--primary-color-30:#899AAC;
+--primary-color-40:#637990;
+--primary-color-50:#3C5875;
+--primary-color-60:#16375A;
+--primary-color-70:#132F4D;
+--primary-color-80:#0F273F;
+--primary-color-90:#0B1B2D;
+--primary-color-100:#07121E;
+--primary-color-110:#04090F;
+--primary-color-120:#000000;
+
+/* Secondary Colors Tone */
+--secondary-color-00:#FFFFFF;
+--secondary-color-10:#D9E7EF;
+--secondary-color-20:#B4CFDF;
+--secondary-color-30:#90B8D0;
+--secondary-color-40:#6CA1C1;
+--secondary-color-50:#478AB1;
+--secondary-color-60:#2373A2;
+--secondary-color-70:#1D6087;
+--secondary-color-80:#174D6D;
+--secondary-color-90:#123A52;
+--secondary-color-100:#0C2737;
+--secondary-color-110:#06141C;
+--secondary-color-120:#000000;
+ 
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --h1-font-size: 2.25rem;
+  --h1-font-size-bold: 2.875rem;
+  --h2-font-size: 2rem;
+  --h2-font-size-bold: 2.375rem;
+  --h3-font-size: 1.75rem;
+  --h3-font-size-bold: 1.875rem;
+  --h4-font-size: 1.5rem;
+  --h5-font-size: 1.25rem;
+  --normal-font-size: 0.875rem;
+  --small-font-size: 0.75rem;
+  --smaller-font-size:0.625rem;
+  --large-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-normal:400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+}
+
+
+/* Font size for large devices */
+/* @media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+} */
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-body);
+}
+.css-dev-only-do-not-override-1me4733{
+  font-family: var(--body-font) !important;
+}
+.ant-table{
+  font-family: var(--body-font) !important;
+}
+
+.h3-medium{
+font-style: normal;
+font-weight:var(--font-medium);
+font-size: var(--h3-font-size-bold);
+line-height: 42px;
+}
+
+.ant-select-selector{
+  /* border-color: var(--secondary-color) !important; */
+  color: #313144;
+  height: 2.5rem !important;
+  align-items: center;
+  font-family: var(--body-font);
+}
+.downarrow-select{
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+hr{
+  background-color: #C4C4C4;
+  height: 1px;
+  border: 1px solid #000000;
+  margin-bottom: var(--mb-0-5);
+  opacity: 0.1;
+}
+
+.button-primary{
+border: none;
+font-size: var(--large-font-size);
+font-weight: var(--font-normal);
+line-height: 24px;
+color: var(--primary-color-00);
+background: var(--primary-color);
+border-radius: 8px;
+font-family: var(--body-font);
+letter-spacing: 0.5px;
+padding: 0.75rem 1.5rem;
+cursor: pointer;
+}
+.mb-bottom-3{
+  margin-bottom: var(--mb-3);
+}
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+} */
+
+
+
+
+
+
+
+
+
+
 #searchInput {
-  background-color: aliceblue;
+  background-color: var(--secondary-color-10);
+  border-radius: 8px;
+  height: 2rem;
+}
+@media only screen and (min-width: 601px) {
+  #searchInput {
+    width: 450px;
+
+  }
+}
+.ant-input-affix-wrapper{
+  border: none !important;
 }
 #searchSubscriptionApi {
   background-color: aliceblue;
@@ -9,41 +212,50 @@
   top: 36% !important;
 } */
 
-body {
-  margin: 0;
-}
 
 /* Header Title */
 .header-title {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: var(--mb-0-5);
 }
 
 .title-item {
-  font-weight: 400;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-normal);
   color: #253d55 !important;
 }
 
 .title-item-api {
-  font-weight: 400;
-  color: rgb(167, 167, 167);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-normal);
+  color: #253d55 !important;
+  opacity: 0.3;
+}
+.main-title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: #273F57;
 }
 
 /* Subscription  */
 .subscription-title {
-  background: aliceblue;
+  background: #F4FAFD;
   width: fit-content;
   padding: 0.5rem;
-  font-size: medium;
-  font-weight: 500;
-  border-radius: 5px;
+  font-size: var(--large-font-size);
+  font-weight: var(--font-normal);
+  color: #253D55;
+  border-radius: 4px;
+  margin-bottom: var(--mb-1);
 }
 
 .subscription-info {
-  font-size: medium;
-  font-weight: 500;
-  color: #6e8298;
-  margin-bottom: 1rem;
+  font-size: var(--large-font-size);
+  font-weight: var(--font-normal);
+  color: var(--primary-color);
+  margin-bottom: var(--mb-1);
+  line-height: 24px;
 }
 
 .subscription-select {
@@ -53,7 +265,14 @@ body {
   gap: 10rem;
   margin: 3rem auto;
 }
-
+.subscription-smalltext{
+font-weight: var(--font-semi-bold);
+font-size: var(--small-font-size);
+color: var(--primary-color);
+}
+.sub-table-icon{
+  color: var(--secondary-color);
+}
 .select-main {
   display: flex;
   flex-direction: column;
@@ -81,7 +300,9 @@ body {
 .subscription-table .ant-table-row {
   background-color: aliceblue !important;
 }
-
+.subscription-table .ant-table-container table>thead>tr:first-child>*:last-child {
+  width: 32rem;
+}
 @media only screen and (max-width: 815px) {
   .subscription-table {
     overflow-x: scroll;
@@ -704,11 +925,6 @@ border: none;
 .itemkeyUrl{
   font-weight: 500;
   color:#a7b3c1;
-}
-hr{
-  height: 1px;
-  background-color: #dfdfdf;
-  border: none;
 }
 h3{
   color: #16375a !important;

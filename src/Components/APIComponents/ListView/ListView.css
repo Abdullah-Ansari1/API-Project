@@ -11,6 +11,14 @@
     overflow-x: scroll;
   }
   }
-  .listview-table  .ant-table-row{
+  /* .listview-table  .ant-table-row{
     background: #e6e9ef !important;
+  } */
+  .list-link{
+    font-weight: var(--font-normal);
+    font-size: var(--large-font-size);
+  }
+  .rating-text{
+    color: #253D55;
+    font-size: 0.625rem;
   }

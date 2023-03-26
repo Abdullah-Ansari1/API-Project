@@ -14,26 +14,42 @@ flex-wrap: wrap;
     align-items: center;
 }
 .ViewChangeIcon{
-    font-size: 20px;
+    font-size:2rem;
+    color: var(--primary-color-20);
+    cursor: pointer;
 }
-.viewChangeInactive{
-    color: gray;
+.viewChangeactive{
+    color: var(--primary-color);
 }
 .ListViewIcons{
-    color: #0f72ad;
-    font-size: 20px;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .API-icon{
-font-size: 40px;
-color: rgb(12, 53, 92);
+    font-size: 1.5rem;
+    color: white;
+    background: var(--primary-color);
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.6rem;
 }
 .total-api{
     display: flex;
     flex-direction: column;
 }
 .api-title{
-    font-size: 22px;
-    font-weight: bold;
+    font-size: var(--h3-font-size-bold);
+    font-weight: 500;
 }
 
+.totalapi-span{
+    color: var(--primary-color);
+    font-weight: var(--font-normal);
+    font-size: var(--smal-font-size);
+    line-height: 16px;
+}
+.main-header .ant-select-selector{
+    border-color: var(--secondary-color) !important;
+
+  }

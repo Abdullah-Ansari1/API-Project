@@ -8,7 +8,7 @@ export const columns = [
       title: 'Name',
       dataIndex: 'name',
       key: 'name',
-      render: (text) => <a>{text}</a>,
+      render: (text) => <a className='list-link'>{text}</a>,
   
     },
     {
@@ -54,7 +54,7 @@ export const columns = [
         <StarFilled style={{color:"#d1d1d1"}} />
         <StarFilled style={{color:"#d1d1d1"}} />
       </div>
-      <span>0/5.0(0users)</span>
+      <span className='rating-text'>0/5.0(0users)</span>
       </div>,
     },
     {
@@ -72,7 +72,7 @@ export const columns = [
       <StarFilled style={{color:"#d1d1d1"}} />
       <StarFilled style={{color:"#d1d1d1"}} />
     </div>
-    <span>0/5.0(0users)</span>
+    <span className='rating-text'>0/5.0(0users)</span>
     </div>,
     },
     {
@@ -90,7 +90,7 @@ export const columns = [
       <StarFilled style={{color:"#d1d1d1"}} />
       <StarFilled style={{color:"#d1d1d1"}} />
     </div>
-    <span>0/5.0(0users)</span>
+    <span className='rating-text'>0/5.0(0users)</span>
     </div>,    
     },
   ];

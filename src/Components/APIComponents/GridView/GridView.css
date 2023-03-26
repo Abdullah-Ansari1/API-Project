@@ -8,32 +8,47 @@
     align-items: center;
 }
 .Card-Title{
-    margin-bottom: -10px;
+    font-style: normal;
+    font-weight: var(--font-bold);
+    font-size: 1.188rem;
+    line-height: 20px;
+    color: #253D55;
 }
 .Card-subheading{
-    font-size: 9px;
-    font-weight: bold;
-    color: rgb(173 173 173);
+    font-size:var(--smaller-font-size);
+    font-weight: var(--font-normal);
+    color: #253D55;
+    opacity: 0.6;
+    margin-bottom: var(--mb-0-5);
 }
 .card-api-context{
-    margin-bottom: -13px;
+    font-size: var(--small-font-size);
+line-height: 18px;
+}
+.card-version{
+    margin-bottom: var(--mb-0-5);
+
 }
 .GridViewCards{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 1rem;
     row-gap: 1rem;
-    justify-content: space-between;
+}
+.Grid-Card{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 @media only screen and (min-width: 601px)  {
     .Grid-Card{
-        min-width: 320px;
+        /* min-width: 320px; */
+        min-width: 32%;
     }
 
 }
 @media only screen and (max-width: 600px)  {
     .Grid-Card{
-        max-width: 320px;
+        width: 100%;
     }
 
 }

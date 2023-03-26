@@ -35,7 +35,7 @@ const GridView = () => {
                   </span>
                 </div>
                 <span>
-                  <p>{item.version}</p>
+                  <p className='card-version'>{item.version}</p>
                   <p className='Card-subheading'>Version</p>
                 </span>
                 <hr />

@@ -1,37 +1,36 @@
 import React from 'react'
 import {
-  UnorderedListOutlined,
   SlackOutlined,
-  PrinterFilled,
-  FileFilled,
-  ControlFilled,
+  CaretDownOutlined
 } from '@ant-design/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode,faFileArrowDown,faPrint,faFileLines,faList } from '@fortawesome/free-solid-svg-icons'
 import { Select } from 'antd';
 import './MenuHeader.css'
 const MenuHeader = ({ handleView, view }) => {
   return (
     <div className="Menu-Header-Container">
       <div className="Menu-Header-Inner">
-        <ControlFilled className="API-icon"/>
+        <FontAwesomeIcon icon={faCode} className="API-icon"/>
         <div className='total-api'>
-          <span className='api-title'>APIs</span>
-          <span style={{ fontSize: "12px", fontWeight: "bold" }}>Total:32</span>
+          <h3 className='h3-medium'>APIs</h3>
+          <span className='totalapi-span'>Total:32</span>
         </div>
       </div>
 
       <div className="Menu-Header-Inner">
         {view === "ListView" && <>
-          <FileFilled className="ListViewIcons" />
-          <PrinterFilled className="ListViewIcons" />
-          <FileFilled className="ListViewIcons" />
-        </>
-        }
+          <FontAwesomeIcon icon={faFileArrowDown} className="ListViewIcons"/>
+          <FontAwesomeIcon icon={faPrint} className="ListViewIcons"/>
+          <FontAwesomeIcon icon={faFileLines} className="ListViewIcons"/>
         <div>
           <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
             defaultValue="All"
             style={{
-              width: 120,
+              width: 134,
             }}
+            className="main-header"
             options={[
               {
                 value: 'All',
@@ -48,8 +47,11 @@ const MenuHeader = ({ handleView, view }) => {
             ]}
           />
         </div>
-        <UnorderedListOutlined className={view !== "ListView" ? "ViewChangeIcon viewChangeInactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }} />
-        <SlackOutlined className={view !== "GridView" ? "ViewChangeIcon viewChangeInactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("GridView") }} />
+        </>
+        }
+        {/* <UnorderedListOutlined className={view !== "ListView" ? "ViewChangeIcon viewChangeInactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }} /> */}
+        <FontAwesomeIcon icon={faList} className={view === "ListView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }}/>
+        <SlackOutlined className={view === "GridView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("GridView") }} />
       </div>
     </div>
   )
