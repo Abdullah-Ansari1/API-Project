@@ -183,11 +183,22 @@ h5 {
 
 
 
+.noApi-content{
+  text-align: center;
+  margin: 6rem auto;
+}
 
+.noApi-title{
+  font-weight: var(--font-medium);
+  font-size: var(--large-font-size);
+  color: var(--primary-color);
+}
 
-
-
-
+.noApi-des{
+  font-weight: var(--font-normal);
+  font-size: var(--large-font-size);
+  color: var(--primary-color-30);
+}
 
 
 #searchInput {
