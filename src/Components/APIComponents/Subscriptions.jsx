@@ -82,16 +82,15 @@ const Subscriptions = () => {
       <div className='subscription-select'>
         <p className='subscription-smalltext'>Application</p>
 
-        <div className='select-main'>
+        <div className='select-main selctbusiness-main'>
           {/* <p>Bussiness Plan</p> */}
           <label htmlFor="select-menu" className='subscription-smalltext'>Bussiness Plan</label>
+          <div className="businessplan-select">
           <Select
           suffixIcon={<FontAwesomeIcon icon={faChevronDown} className="ant-select-suffix downarrow-select"/>}
             defaultValue="Bronze"
             name='select-menu'
-            style={{
-              width: "15rem"
-            }}
+            style={{width:'100%'}}
             options={[
               {
                 value: 'Bronze',
@@ -111,6 +110,7 @@ const Subscriptions = () => {
               },
             ]}
           />
+          </div>
         </div>
       </div>
       {/* <button className='subscribe-btn'>Subscribe</button> */}

@@ -5,6 +5,7 @@ justify-content: space-between;
 align-items: center;
 margin-bottom: 20px;
 flex-wrap: wrap;
+row-gap: 1rem;
 }
 .Menu-Header-Inner{
     display: flex;
@@ -51,5 +52,9 @@ flex-wrap: wrap;
 }
 .main-header .ant-select-selector{
     border-color: var(--secondary-color) !important;
-
+    font-weight: var(--font-normal);
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    font-family: var(--body-font) !important;
+    align-items: center;
   }
