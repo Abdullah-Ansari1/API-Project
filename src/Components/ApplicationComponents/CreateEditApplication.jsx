@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 import { Input, Select } from "antd";
+import { CaretDownOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
-const CreateEditApplication = ({ title,handleEditSection }) => {
+const CreateEditApplication = ({ title, handleEditSection }) => {
   return (
     <div>
       <div className="editApplication-header">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>
           Create an application providing name and quota parameters. Description
           a optional.
@@ -30,6 +31,9 @@ const CreateEditApplication = ({ title,handleEditSection }) => {
             Shared Quota for Application Tokens
           </label>
           <Select
+            suffixIcon={
+              <CaretDownOutlined className="ant-select-suffix downarrow-select editapplicationarrow" />
+            }
             name="selecttokens"
             defaultValue="10 mins"
             className="selecttoken-editapplication"
@@ -54,7 +58,9 @@ const CreateEditApplication = ({ title,handleEditSection }) => {
           />
         </div>
       </div>
-      <p className="quota-hint">
+      <p
+        style={{ marginTop: "0.5rem", marginBottom: "2rem", fontSize: "13px",color:"#637990" }}
+      >
         Assign API Requested quote per access token. Allocated quota will be
         shared among all the subscribed APIs of the apllication
       </p>
@@ -84,7 +90,7 @@ const CreateEditApplication = ({ title,handleEditSection }) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CreateEditApplication
+export default CreateEditApplication;

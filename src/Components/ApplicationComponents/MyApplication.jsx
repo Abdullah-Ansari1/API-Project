@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { Table } from "antd";
 import { Input } from "antd";
 
-import {
-    EditFilled,
-    DeleteFilled,
-  SearchOutlined,
-} from "@ant-design/icons";
-
-const MyApplication = ({handleEditSection,handleDeleteModal}) => {
+import { SearchOutlined } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen, faTrashCan,faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+const MyApplication = ({ handleEditSection, handleDeleteModal }) => {
   const [searchedText, setSearchedText] = useState("");
 
-//  Column Data
+  //  Column Data
   const columns = [
     {
       title: "Name",
@@ -51,8 +48,7 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
     },
   ];
 
-
-//   Row Data
+  //   Row Data
   const data = [
     {
       key: "1",
@@ -62,10 +58,20 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
       worklog: "Active",
       subscription: "0",
       action: (
-          <div className="edit-delete-application">
-            <EditFilled className="myapplication-edit-icon" onClick={()=>handleEditSection(true)}/>
-            <DeleteFilled className="myapplication-delete-icon" onClick={()=>{handleDeleteModal(true)}}/>
-          </div>
+        <div className="edit-delete-application">
+          <FontAwesomeIcon
+            icon={faPen}
+            className="myapplication-edit-icon"
+            onClick={() => handleEditSection(true)}
+          />
+          <FontAwesomeIcon
+            icon={faTrashCan}
+            className="myapplication-delete-icon"
+            onClick={() => {
+              handleDeleteModal(true);
+            }}
+          />
+        </div>
       ),
     },
     {
@@ -76,20 +82,28 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
       worklog: "Active",
       subscription: "0",
       action: (
-          <div className="edit-delete-application">
-            <EditFilled  className="myapplication-edit-icon" onClick={()=>handleEditSection(true)}/>
-            <DeleteFilled className="myapplication-delete-icon" onClick={()=>{handleDeleteModal(true)}}/>
-          </div>
+        <div className="edit-delete-application">
+          <FontAwesomeIcon
+            icon={faPen}
+            className="myapplication-edit-icon"
+            onClick={() => handleEditSection(true)}
+          />
+          <FontAwesomeIcon
+            icon={faTrashCan}
+            className="myapplication-delete-icon"
+            onClick={() => {
+              handleDeleteModal(true);
+            }}
+          />
+        </div>
       ),
     },
   ];
 
-
-
   return (
     <div>
       <div className="myApplication-header">
-        <h3>My Application</h3>
+        <h3 className="myapplication-title">My Application</h3>
         <p>
           An application is a logical Collection of APIs. Application is allow
           you to use a single token to invoke a collection of APIs and to
@@ -98,19 +112,21 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
         </p>
         <hr />
       </div>
-      <div>
+      <div className="application-table-maindiv">
         <div className="myapplication-searcheader">
-          <Input
-            size="large"
-            placeholder="Search"
-            onChange={(e) => {
-              setSearchedText(e.target.value);
-            }}
-            prefix={<SearchOutlined style={{ opacity: "0.2" }} />}
-            id="searchInput"
-            allowClear={true}
-            style={{ backgroundColor: "#D9E7EF", maxWidth:"25vw" }}
-          />
+          <div className="search-div">
+            <Input
+              size="large"
+              placeholder="Search"
+              onChange={(e) => {
+                setSearchedText(e.target.value);
+              }}
+              prefix={<FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize:"1.2rem",opacity:"0.2"}}/>}
+              id="searchInputApplication"
+              allowClear={true}
+              style={{ backgroundColor: "#E6F4F9" }}
+            />
+          </div>
           <button>Search</button>
         </div>
         <Table
@@ -118,9 +134,9 @@ const MyApplication = ({handleEditSection,handleDeleteModal}) => {
           dataSource={data}
           className="myapplication-table"
           pagination={false}
-        //   scroll={{
-        //     x: '100vw',
-        //   }}
+          //   scroll={{
+          //     x: '100vw',
+          //   }}
         />
       </div>
     </div>

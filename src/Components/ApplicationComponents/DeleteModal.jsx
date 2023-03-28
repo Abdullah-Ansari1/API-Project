@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal } from "antd";
-import { ReloadOutlined } from "@ant-design/icons";
+import ReloadIcon from '../../assets/icons/reload-icon.png'
 const DeleteModal = ({openDeleteModal,handleDeleteModal}) => {
   const handleOk = () => {
     handleDeleteModal(false);
@@ -25,11 +25,12 @@ const DeleteModal = ({openDeleteModal,handleDeleteModal}) => {
         ]}
       >
         <div className="delete-content">
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <ReloadOutlined className="reload-icon" />
-            <h1>Delete Application</h1>
+          <div className="iconWith-title">
+            {/* <ReloadOutlined className="reload-icon" /> */}
+            <img src={ReloadIcon} alt="ReloadIcon" />
+            <h2 className="delete-title">Delete Application</h2>
           </div>
-          <p>Are you sure you want to Delete ?</p>
+          <p className="delete-description">Are you sure you want to Delete the subscription?</p>
         </div>
       </Modal>
     </div>

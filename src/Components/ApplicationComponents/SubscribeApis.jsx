@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Table, Modal, Input, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
+import {
+  CaretDownOutlined
+} from '@ant-design/icons';
 const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
   const handleCancel = () => {
     handleSubscribeApi(false);
@@ -39,16 +42,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -71,16 +75,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -103,16 +108,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -135,16 +141,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -167,16 +174,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -199,16 +207,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -231,16 +240,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -263,16 +273,17 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
       status: (
         <div className="subscripeapi-status">
           <Select
-            defaultValue="Default"
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
             className="subscribeApi-select"
             options={[
               {
-                value: "Label1",
-                label: "Label1",
+                value: "Bronze",
+                label: "Bronze",
               },
               {
-                value: "Label2",
-                label: "Label2",
+                value: "Unlimited",
+                label: "Unlimited",
               },
               {
                 value: "Label3",
@@ -304,7 +315,7 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
             prefix={<SearchOutlined style={{ opacity: "0.2",fontSize:"1.3rem"}} />}
             id="searchSubscriptionApi"
             allowClear={true}
-            style={{ backgroundColor: "aliceblue", maxWidth: "25vw" }}
+            style={{ backgroundColor: "aliceblue", minWidth: "22vw",height:"2.5rem" }}
           />
         </div>
       </div>}

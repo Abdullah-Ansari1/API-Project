@@ -22,6 +22,7 @@ import SandboxOAuth from "../Components/ApplicationComponents/SandboxOAuth";
 import SandboxApikey from "../Components/ApplicationComponents/SandboxApikey";
 import Subscription from "../Components/ApplicationComponents/Subscription";
 import SubscriptionUpdateModal from "../Components/ApplicationComponents/SubscriptionUpdateModal";
+import GenerateKeyModal from "../Components/ApplicationComponents/GenerateKeyModal";
 const { Content } = Layout;
 const Home = () => {
   const [changeMenu, setChangeMenu] = useState("api");
@@ -33,6 +34,7 @@ const Home = () => {
   const [editApplication, setEditApplication] = useState(false);
   const [openDeleteModal, setOpenDeleteModal] = useState(false);
   const [updateSubscriptionModal, setUpdateSubscriptionModal] = useState(false);
+  const [generateKeyModal, setGenerateKeyModal] = useState(false);
   const handleDeleteModal = (value) => {
     setOpenDeleteModal(value);
   };
@@ -56,6 +58,9 @@ const Home = () => {
   };
   const handleSubscribeApi=(value)=>{
     setOpenSubscribeModal(value);
+  }
+  const handleGenearteKeyModal=(value)=>{
+setGenerateKeyModal(value)
   }
   return (
     <Layout style={{ minHeight: "100vh" }}>
@@ -130,6 +135,8 @@ const Home = () => {
               />
               {/* SubscriptionApi Modal */}
               <SubscriptionUpdateModal handleUpdateSubscriptionModal={handleUpdateSubscriptionModal} updateSubscriptionModal={updateSubscriptionModal}/>
+              {/* GenerateKey Modal */}
+              <GenerateKeyModal handleGenearteKeyModal={handleGenearteKeyModal} generateKeyModal={generateKeyModal}/>
               {/* My Application */}
               {!editApplication && selectedComponent === "" && (
                 <MyApplication
@@ -169,7 +176,7 @@ const Home = () => {
                 changeMenu === "application" && (
                   <div>
                     {/* Overview Application*/}
-                    <ProductionApikeys/>
+                    <ProductionApikeys handleGenearteKeyModal={handleGenearteKeyModal}/>
                   </div>
                 )}
               {selectedComponent === "sandboxkeys" &&
@@ -190,7 +197,7 @@ const Home = () => {
                 changeMenu === "application" && (
                   <div>
                     {/* Overview Application*/}
-                    <SandboxApikey/>
+                    <SandboxApikey handleGenearteKeyModal={handleGenearteKeyModal}/>
                   </div>
                 )}
               {selectedComponent === "subscription" &&

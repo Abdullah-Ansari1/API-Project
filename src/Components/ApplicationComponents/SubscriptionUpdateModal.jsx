@@ -1,5 +1,8 @@
 import React from 'react'
 import { Modal,Select } from "antd";
+import {
+    CaretDownOutlined
+  } from '@ant-design/icons';
 const SubscriptionUpdateModal = ({ updateSubscriptionModal, handleUpdateSubscriptionModal }) => {
     const handleOk = () => {
         handleUpdateSubscriptionModal(false);
@@ -24,9 +27,10 @@ const SubscriptionUpdateModal = ({ updateSubscriptionModal, handleUpdateSubscrip
                 ]}
             >
                 <div className="updateSubscription-content">
-                    <p>Update Subscription</p>
-                    <p>Current Bussiness Plan: Bronze</p>
+                    <h2 className='update-subscription-title'>Update Subscription</h2>
+                    <p className='update-subscription-label'>Current Bussiness Plan: Bronze</p>
                     <Select
+                    suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
                             defaultValue="Default"
                             id='select-menu-default'
                             className='subscriptionModal-select'
@@ -49,7 +53,7 @@ const SubscriptionUpdateModal = ({ updateSubscriptionModal, handleUpdateSubscrip
                                 },
                             ]}
                         />
-                        <p className='access-tokenhint'>Assign a business plan to the existing subscription</p>
+                        <p className='select-hint'>Assign a business plan to the existing subscription</p>
                 </div>
             </Modal>
         </div>

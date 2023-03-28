@@ -66,7 +66,7 @@ const Subscription = ({ handleSubscribeApi,openSubscribeModal,handleDeleteModal,
     <div>
       <SubscribeApis openSubscribeModal={openSubscribeModal} handleSubscribeApi={handleSubscribeApi}/>
       <HeaderTitle />
-      <div className="productionkey-title">
+      <div style={{margin:"1rem 0"}}>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
           <h3>Subscription Management</h3>
           <span onClick={() => handleSubscribeApi(true)} className="link-subscribe">
@@ -74,13 +74,13 @@ const Subscription = ({ handleSubscribeApi,openSubscribeModal,handleDeleteModal,
           </span>
         </div>
       </div>
-      <div className="noComment-main">
+      {/* <div className="noComment-main">
         <div>
           <InfoCircleFilled style={{ color: "#34adf4" }} />
           <span>No Key Manager</span>
         </div>
         <span>No Key Manager active to generate keys</span>
-      </div>
+      </div> */}
       <div className='tset-data'>
       <Table
           columns={columns}

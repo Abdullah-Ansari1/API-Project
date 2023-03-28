@@ -1,23 +1,24 @@
 import React from 'react'
 import { Input, Checkbox } from "antd";
-import { CopyFilled } from "@ant-design/icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import HeaderTitle from './HeaderTitle';
 const SandboxOAuth = () => {
   return (
     <div>
       <HeaderTitle />
       <div className="productionkey-title">
-        <h3>Sandbox OAuth2 Key</h3>
+        <h3 className="title-production">Sandbox OAuth2 Key</h3>
         <p>Key and Secret</p>
       </div>
       <div className="customerandsecretkey">
       <div>
       <label htmlFor="customerkey" className="key-label">Customer Key</label>
-      <Input name="customerkey" value="QW3425632YUYTR" suffix={<CopyFilled />} className="key-input"/>
+      <Input name="customerkey" value="QW3425632YUYTR" suffix={<FontAwesomeIcon icon={faCopy} className="copy-icon"/>} className="key-input"/>
       </div>
       <div>
       <label htmlFor="customersectretkey" className="key-label">Customer Secret</label>
-      <Input name="customersectretkey" value="QW3425632YUYTR" suffix={<CopyFilled />} className="key-input"/>
+      <Input name="customersectretkey" value="QW3425632YUYTR" suffix={<FontAwesomeIcon icon={faCopy} className="copy-icon"/>} className="key-input"/>
       </div>
         
       </div>
@@ -27,7 +28,7 @@ const SandboxOAuth = () => {
       </div>
 
       <div className="keyCOnfiguration">
-        <h3>Key Configuration</h3>
+        <h3 className="title-production">Key Configuration</h3>
         <div className="item-key">
           <p className="test">Token Expert</p>
           <span className="itemkeyUrl">

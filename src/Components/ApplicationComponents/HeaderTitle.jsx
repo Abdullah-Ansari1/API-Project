@@ -3,6 +3,8 @@ import {
   EditFilled,
   DeleteFilled,
 } from "@ant-design/icons";
+import { RiEdit2Fill } from 'react-icons/ri';
+import { ImBin } from 'react-icons/im';
 const HeaderTitle = ({ apikey }) => {
   return (
     <div>
@@ -12,8 +14,8 @@ const HeaderTitle = ({ apikey }) => {
           <p className="subscription-total">0 Subscription</p>
         </div>
         {!apikey && <div className="headerapplication-icons">
-          <EditFilled className="headerapplication-icon" />
-          <DeleteFilled className="headerapplication-icon" />
+        <RiEdit2Fill className="headerapplication-icon"/>
+        <ImBin className="headerapplication-icon"/>
         </div>}
       </div>
       <hr />
