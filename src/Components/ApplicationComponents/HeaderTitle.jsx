@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  EditFilled,
-  DeleteFilled,
-} from "@ant-design/icons";
-import { RiEdit2Fill } from 'react-icons/ri';
-import { ImBin } from 'react-icons/im';
+import Edit from "../../assets/icons/edit.svg";
+import Trash from "../../assets/icons/trash.svg";
 const HeaderTitle = ({ apikey }) => {
   return (
     <div>
@@ -14,8 +10,8 @@ const HeaderTitle = ({ apikey }) => {
           <p className="subscription-total">0 Subscription</p>
         </div>
         {!apikey && <div className="headerapplication-icons">
-        <RiEdit2Fill className="headerapplication-icon"/>
-        <ImBin className="headerapplication-icon"/>
+        <img src={Edit} alt="Edit" className="headerapplication-icon"/>
+        <img src={Trash} alt="Trash" className="headerapplication-icon"/>
         </div>}
       </div>
       <hr />

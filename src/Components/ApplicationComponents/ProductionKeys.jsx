@@ -1,8 +1,7 @@
 import React from "react";
 import HeaderTitle from "./HeaderTitle";
 import { Input, Checkbox } from "antd";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopy } from "@fortawesome/free-solid-svg-icons";
+import Copy from '../../assets/icons/copy.svg';
 const ProductionKeys = () => {
   return (
     <div>
@@ -14,11 +13,11 @@ const ProductionKeys = () => {
       <div className="customerandsecretkey">
       <div>
       <label htmlFor="customerkey" className="key-label">Customer Key</label>
-      <Input name="customerkey" value="QW3425632YUYTR" suffix={<FontAwesomeIcon icon={faCopy} className="copy-icon"/>} className="key-input"/>
+      <Input name="customerkey" value="QW3425632YUYTR" suffix={<img src={Copy} alt="Copy" style={{cursor:"pointer"}}/>} className="key-input"/>
       </div>
       <div>
       <label htmlFor="customersectretkey" className="key-label">Customer Secret</label>
-      <Input name="customersectretkey" value="QW3425632YUYTR" suffix={<FontAwesomeIcon icon={faCopy} className="copy-icon"/>} className="key-input"/>
+      <Input name="customersectretkey" value="QW3425632YUYTR" suffix={<img src={Copy} alt="Copy" style={{cursor:"pointer"}}/>} className="key-input"/>
       </div>
         
       </div>

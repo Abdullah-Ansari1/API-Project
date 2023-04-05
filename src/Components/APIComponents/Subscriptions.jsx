@@ -1,13 +1,10 @@
 import React from "react";
 import HeaderTitle from "./HeaderTitle";
 import { Select, Table } from "antd";
-import { StarFilled } from "@ant-design/icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronDown,
-  faKey,
-  faBarsProgress,
-} from "@fortawesome/free-solid-svg-icons";
+import KeySquare from "../../assets/icons/key-square.svg";
+import SecurityKey from "../../assets/icons/security-key.svg";
+import Unsubscribe from "../../assets/icons/unsubscribe.svg";
+import SelectDownArrow from "../../assets/icons/selectdown-arrow.svg";
 const columns = [
   {
     title: "Application Name",
@@ -39,18 +36,27 @@ const data = [
     actions: (
       <div style={{ display: "flex", gap: "1rem" }}>
         <span>
-          <FontAwesomeIcon icon={faKey} className="sub-table-icon" /> SANDBOX
-          KEYS
+          <img src={KeySquare} alt="KeySquare" style={{ marginRight: "4px" }} />
+          SANDBOX KEYS
         </span>
         <span>
-          <FontAwesomeIcon icon={faKey} className="sub-table-icon" /> PROD KEYS
+          <img src={SecurityKey} alt="SecurityKey" style={{ marginRight: "4px" }} />
+          PROD KEYS
         </span>
         <span>
-          <FontAwesomeIcon icon={faBarsProgress} className="sub-table-icon" />
+          <img
+            src={Unsubscribe}
+            alt="Unsubscribe"
+            style={{ marginRight: "4px" }}
+          />
           UNSUBSCRIBE
         </span>
         <span>
-          <FontAwesomeIcon icon={faBarsProgress} className="sub-table-icon" />
+          <img
+            src={Unsubscribe}
+            alt="Unsubscribe"
+            style={{ marginRight: "4px" }}
+          />
           MANAGE APP
         </span>
       </div>
@@ -64,18 +70,27 @@ const data = [
     actions: (
       <div style={{ display: "flex", gap: "1rem" }}>
         <span>
-          <FontAwesomeIcon icon={faKey} className="sub-table-icon" /> SANDBOX
-          KEYS
+          <img src={KeySquare} alt="KeySquare" style={{ marginRight: "4px" }} />
+          SANDBOX KEYS
         </span>
         <span>
-          <FontAwesomeIcon icon={faKey} className="sub-table-icon" /> PROD KEYS
+          <img src={SecurityKey} alt="SecurityKey" style={{ marginRight: "4px" }} />
+          PROD KEYS
         </span>
         <span>
-          <FontAwesomeIcon icon={faBarsProgress} className="sub-table-icon" />
+          <img
+            src={Unsubscribe}
+            alt="Unsubscribe"
+            style={{ marginRight: "4px" }}
+          />
           UNSUBSCRIBE
         </span>
         <span>
-          <FontAwesomeIcon icon={faBarsProgress} className="sub-table-icon" />
+          <img
+            src={Unsubscribe}
+            alt="Unsubscribe"
+            style={{ marginRight: "4px" }}
+          />
           MANAGE APP
         </span>
       </div>
@@ -108,10 +123,7 @@ const Subscriptions = () => {
           <div className="businessplan-select">
             <Select
               suffixIcon={
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className="ant-select-suffix downarrow-select"
-                />
+                <img src={SelectDownArrow} alt={SelectDownArrow}  className="ant-select-suffix downarrow-select"/>
               }
               defaultValue="Bronze"
               name="select-menu"

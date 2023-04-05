@@ -1,17 +1,21 @@
 import React from 'react'
 import {
-  SlackOutlined,
   CaretDownOutlined
 } from '@ant-design/icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode,faFileArrowDown,faPrint,faFileLines,faList } from '@fortawesome/free-solid-svg-icons'
+import DocumentDownload from '../../assets/icons/document-download.svg'
+import Printer from '../../assets/icons/printer.svg'
+import TaskSquare from '../../assets/icons/task-square.svg'
+import Grid from '../../assets/icons/grid.svg'
+import List from '../../assets/icons/list.svg'
+import Code from '../../assets/icons/code.svg'
+
 import { Select } from 'antd';
 import './MenuHeader.css'
 const MenuHeader = ({ handleView, view }) => {
   return (
     <div className="Menu-Header-Container">
       <div className="Menu-Header-Inner">
-        <FontAwesomeIcon icon={faCode} className="API-icon"/>
+        <img src={Code} alt="Code"/>
         <div className='total-api'>
           <h3 className='h3-medium'>APIs</h3>
           <span className='totalapi-span'>Total:32</span>
@@ -20,9 +24,12 @@ const MenuHeader = ({ handleView, view }) => {
 
       <div className="Menu-Header-Inner">
         {view === "ListView" && <>
-          <FontAwesomeIcon icon={faFileArrowDown} className="ListViewIcons"/>
-          <FontAwesomeIcon icon={faPrint} className="ListViewIcons"/>
-          <FontAwesomeIcon icon={faFileLines} className="ListViewIcons"/>
+          {/* <FontAwesomeIcon icon={faFileArrowDown} className="ListViewIcons"/> */}
+          {/* <FontAwesomeIcon icon={faPrint} className="ListViewIcons"/> */}
+          {/* <FontAwesomeIcon icon={faFileLines} className="ListViewIcons"/> */}
+          <img src={DocumentDownload} alt="DocumentDownload" className="ListViewIcons"/>
+          <img src={Printer} alt="Printer" className="ListViewIcons"/>
+          <img src={TaskSquare} alt="TaskSquare" className="ListViewIcons"/>
         <div>
           <Select
           suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
@@ -50,8 +57,12 @@ const MenuHeader = ({ handleView, view }) => {
         </>
         }
         {/* <UnorderedListOutlined className={view !== "ListView" ? "ViewChangeIcon viewChangeInactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }} /> */}
-        <FontAwesomeIcon icon={faList} className={view === "ListView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }}/>
-        <SlackOutlined className={view === "GridView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("GridView") }} />
+        
+        {/* <FontAwesomeIcon icon={faList} className={view === "ListView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }}/> */}
+        
+        <img src={List} alt="List" className='ViewChangeIcon' onClick={(e) => { e.preventDefault(); handleView("ListView") }}/>
+        <img src={Grid} alt="Grid" className='ViewChangeIcon' onClick={(e) => { e.preventDefault(); handleView("GridView") }}/>
+        {/* <SlackOutlined className={view === "GridView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("GridView") }} /> */}
       </div>
     </div>
   )

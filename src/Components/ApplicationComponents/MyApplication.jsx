@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Table } from "antd";
 import { Input } from "antd";
-
-import { SearchOutlined } from "@ant-design/icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen, faTrashCan,faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import Edit from "../../assets/icons/edit.svg";
+import Trash from "../../assets/icons/trash.svg";
+import Search from "../../assets/icons/Search.svg";
 const MyApplication = ({ handleEditSection, handleDeleteModal }) => {
   const [searchedText, setSearchedText] = useState("");
 
@@ -59,13 +58,15 @@ const MyApplication = ({ handleEditSection, handleDeleteModal }) => {
       subscription: "0",
       action: (
         <div className="edit-delete-application">
-          <FontAwesomeIcon
-            icon={faPen}
+          <img
+            src={Edit}
+            alt="Edit"
             className="myapplication-edit-icon"
             onClick={() => handleEditSection(true)}
           />
-          <FontAwesomeIcon
-            icon={faTrashCan}
+          <img
+            src={Trash}
+            alt="Trash"
             className="myapplication-delete-icon"
             onClick={() => {
               handleDeleteModal(true);
@@ -83,13 +84,15 @@ const MyApplication = ({ handleEditSection, handleDeleteModal }) => {
       subscription: "0",
       action: (
         <div className="edit-delete-application">
-          <FontAwesomeIcon
-            icon={faPen}
+          <img
+            src={Edit}
+            alt="Edit"
             className="myapplication-edit-icon"
             onClick={() => handleEditSection(true)}
           />
-          <FontAwesomeIcon
-            icon={faTrashCan}
+          <img
+            src={Trash}
+            alt="Trash"
             className="myapplication-delete-icon"
             onClick={() => {
               handleDeleteModal(true);
@@ -121,7 +124,9 @@ const MyApplication = ({ handleEditSection, handleDeleteModal }) => {
               onChange={(e) => {
                 setSearchedText(e.target.value);
               }}
-              prefix={<FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize:"1.2rem",opacity:"0.2"}}/>}
+              prefix={
+                <img src={Search} alt="Search"/>
+              }
               id="searchInputApplication"
               allowClear={true}
               style={{ backgroundColor: "#E6F4F9" }}

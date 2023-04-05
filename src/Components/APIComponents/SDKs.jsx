@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderTitle from "./HeaderTitle";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import DownloadFile from '../../assets/icons/document-downloadSDK.svg'
 import SDK1 from "../../assets/Sdk1.png";
 import SDK2 from "../../assets/Sdk2.png";
 import SDK3 from "../../assets/Sdk3.png";
@@ -40,10 +39,11 @@ const SDKs = () => {
               <div className="sdks-content">
                 <h2>{title}</h2>
                 <div className="download-sdks">
-                  <FontAwesomeIcon
+                  <img src={DownloadFile} alt="DownloadFile" />
+                  {/* <FontAwesomeIcon
                     icon={faFileArrowDown}
                     style={{ fontSize: "1.2rem" }}
-                  />
+                  /> */}
                   <span>Download</span>
                 </div>
               </div>

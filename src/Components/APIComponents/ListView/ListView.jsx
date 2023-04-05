@@ -1,8 +1,7 @@
 import React from "react";
 import { Table } from "antd";
 import { columns, data } from "./TableData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import Code from "../../../assets/icons/code.svg";
 import "./ListView.css";
 const ListView = () => {
   return (
@@ -17,11 +16,11 @@ const ListView = () => {
       </div>
       {/* When there is no Api then we run the following code currently its commented */}
 
-      {/* <div className='noApi-content'>        
-<FontAwesomeIcon icon={faCode} className="API-icon"/>
-<p className='noApi-title'>No APIs Available</p>
-<p className='noApi-des'>There is no API to Display right now</p>
-</div> */}
+      {/* <div className="noApi-content">
+        <img src={Code} alt="code" />
+        <p className="noApi-title">No APIs Available</p>
+        <p className="noApi-des">There is no API to Display right now</p>
+      </div> */}
     </>
   );
 };
