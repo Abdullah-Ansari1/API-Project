@@ -1,8 +1,7 @@
 import {
-  SettingFilled,
   StarFilled
 } from '@ant-design/icons';
-
+import ApiSetting from '../../../assets/icons/apiSetting.svg'
 export const columns = [
     {
       title: 'Name',
@@ -41,7 +40,7 @@ export const columns = [
  export const data = [
     {
       key: '1',
-      name: <div><SettingFilled style={{marginRight:"20px", color:"rgb(12, 53, 92)"}}/>AWSS3Control</div>,
+      name: <div style={{display:"flex",flexWrap:"wrap",alignItems:"center"}}><img src={ApiSetting} alt="ApiSetting" style={{marginRight:"20px"}}/>AWSS3Control</div>,
       version: "2018-8-20",
       context: '/awss3control',
       provider: "admin((Provider)",
@@ -59,7 +58,7 @@ export const columns = [
     },
     {
       key: '2',
-      name: <div><SettingFilled style={{marginRight:"20px", color:"rgb(12, 53, 92)"}}/>HealthCare-API</div>,
+      name: <div style={{display:"flex",flexWrap:"wrap",alignItems:"center"}}><img src={ApiSetting} alt="ApiSetting" style={{marginRight:"20px"}}/>HealthCare-API</div>,
       version: "1",
       context: '/HC',
       provider: "admin((Provider)",
@@ -77,7 +76,7 @@ export const columns = [
     },
     {
       key: '3',
-      name: <div><SettingFilled style={{marginRight:"20px", color:"rgb(12, 53, 92)"}}/>PizzaShackAPI</div>,
+      name: <div style={{display:"flex",flexWrap:"wrap",alignItems:"center"}}><img src={ApiSetting} alt="ApiSetting" style={{marginRight:"20px"}}/>PizzaShackAPI</div>,
       version: "1.0.0",
       context: '/pizzashack',
       provider: "admin((Provider)",

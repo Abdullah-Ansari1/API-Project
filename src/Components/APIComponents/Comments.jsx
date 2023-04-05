@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderTitle from "./HeaderTitle";
-import { PlusCircleFilled, InfoCircleFilled } from "@ant-design/icons";
-
+import { PlusCircleFilled } from "@ant-design/icons";
+import NoDataCard from '.././NoDataCard/NoDataCard';
 const Comments = () => {
   return (
     <div>
@@ -11,13 +11,7 @@ const Comments = () => {
         <PlusCircleFilled className="add-icon" />
         <span>Write a comment</span>
       </div>
-      <div className="noComment-main">
-        <div>
-          <InfoCircleFilled className="info-icon" />
-          <span>No Comment Yet</span>
-        </div>
-        <span>No Comment available for this API yet</span>
-      </div>
+      <NoDataCard title="No Comment Yet" description="No Comment available for this API yet"/>
     </div>
   );
 };

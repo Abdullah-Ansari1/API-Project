@@ -2,8 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import { StarFilled } from "@ant-design/icons";
 import { data } from "./CardData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
+import Code from "../../../assets/icons/code.svg";
 import "./GridView.css";
 const GridView = () => {
   return (
@@ -56,11 +55,11 @@ const GridView = () => {
       </div>
       {/* When there is no Api then we run the following code currently its commented */}
 
-      {/* <div className='noApi-content'>        
-<FontAwesomeIcon icon={faCode} className="API-icon"/>
-<p className='noApi-title'>No APIs Available</p>
-<p className='noApi-des'>There is no API to Display right now</p>
-</div> */}
+      {/* <div className="noApi-content">
+        <img src={Code} alt="code" />
+        <p className="noApi-title">No APIs Available</p>
+        <p className="noApi-des">There is no API to Display right now</p>
+      </div> */}
     </div>
   );
 };

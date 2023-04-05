@@ -1,8 +1,7 @@
 import React from "react";
-import { SearchOutlined } from "@ant-design/icons";
 import { Input, Select, theme } from "antd";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import Search from '../../assets/icons/Search.svg'
+import SelectDownArrow from '../../assets/icons/selectdown-arrow.svg'
 import "./MainNav.css";
 
 const MainNav = () => {
@@ -21,7 +20,7 @@ const MainNav = () => {
           <Input
             size="large"
             placeholder="Search anything..."
-            prefix={<SearchOutlined style={{ color: "#A0A3BD" }} />}
+            prefix={<img src={Search} alt="Search"/>}
             id="searchInput"
             allowClear={true}
             style={{ backgroundColor: "#D9E7EF" }}
@@ -36,7 +35,7 @@ const MainNav = () => {
             className="userImage"
           />
           <Select
-          suffixIcon={<FontAwesomeIcon icon={faChevronDown} className="ant-select-suffix downarrow-select"/>}
+          suffixIcon={<img src={SelectDownArrow} alt="SelectDownArrow" className="ant-select-suffix downarrow-select"/>}
             defaultValue="admin"
             bordered={false}
             className="user-select"

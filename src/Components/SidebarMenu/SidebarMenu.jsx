@@ -5,6 +5,17 @@ import {
   PieChartFilled,
   AccountBookFilled,
 } from "@ant-design/icons";
+import OverViewIcon from '../../assets/icons/overview-icon.svg'
+import OverViewActiveIcon from '../../assets/icons/overview-icon.svg'
+
+import subscriptionIcon from '../../assets/icons/subscription-icon.svg'
+import apiKeyIcon from '../../assets/icons/apikey-icon.svg'
+import OuathTokenIcon from '../../assets/icons/OuathToken-icon.svg'
+import SandboxKeyIcon from '../../assets/icons/sandboxkey-icon.svg'
+import ProductionKeysIcon from '../../assets/icons/productionKeys-icon.svg'
+import commentsIcon from '../../assets/icons/comments.svg'
+import SdkIcon from '../../assets/icons/sdk.svg'
+import documentIcon from '../../assets/icons/document.svg'
 import { Layout, Menu, Button } from "antd";
 import "./SidebarMenu.css";
 const { Sider } = Layout;
@@ -45,22 +56,22 @@ const menu1 = [
 ];
 
 const menu2 = [
-  getItem("Overview", "overview", <HomeFilled />),
-  getItem("Subscriptions", "subscription", <HomeFilled />),
-  getItem("Try Out", "tryout", <HomeFilled />),
-  getItem("Comments", "comments", <HomeFilled />),
-  getItem("Documentation", "documentation", <HomeFilled />),
-  getItem("SDKs", "sdks", <HomeFilled />),
+  getItem("Overview", "overview",<img src={OverViewIcon} alt="Overview"/>),
+  getItem("Subscriptions", "subscription",  <img src={subscriptionIcon} alt="subscriptionIcon"/>),
+  getItem("Try Out", "tryout", <img src={SandboxKeyIcon} alt="SandboxKeyIcon"/>),
+  getItem("Comments", "comments", <img src={commentsIcon} alt="commentsicon"/>),
+  getItem("Documentation", "documentation",<img src={documentIcon} alt="documentIcon"/>),
+  getItem("SDKs", "sdks", <img src={SdkIcon} alt="sdk"/>),
 ];
 const menu3 = [
-  getItem("Overview", "overview", <HomeFilled />),
-  getItem("Production Keys", "productionkeys", <HomeFilled />),
-  getItem("OAuth2 Tokens", "productionOauth2tokens", <HomeFilled />),
-  getItem("API Keys", "productionapikeys", <HomeFilled />),
-  getItem("Sandbox Keys", "sandboxkeys", <HomeFilled />),
-  getItem("Oauth2 Tokens", "sandboxOauth2tokens", <HomeFilled />),
-  getItem("API Keys", "sandboxapikeys", <HomeFilled />),
-  getItem("Subscription", "subscription", <HomeFilled />),
+  getItem("Overview", "overview",<img src={OverViewIcon} alt="Overview"/>),
+  getItem("Production Keys", "productionkeys", <img src={ProductionKeysIcon} alt="ProductionKeysIcon"/>),
+  getItem("OAuth2 Tokens", "productionOauth2tokens", <img src={OuathTokenIcon} alt="OuathTokenIcon"/>),
+  getItem("API Keys", "productionapikeys", <img src={apiKeyIcon} alt="apiKeyIcon"/>),
+  getItem("Sandbox Keys", "sandboxkeys", <img src={SandboxKeyIcon} alt="SandboxKeyIcon"/>),
+  getItem("Oauth2 Tokens", "sandboxOauth2tokens", <img src={OuathTokenIcon} alt="OuathTokenIcon"/>),
+  getItem("API Keys", "sandboxapikeys", <img src={apiKeyIcon} alt="apiKeyIcon"/>),
+  getItem("Subscription", "subscription", <img src={subscriptionIcon} alt="subscriptionIcon"/>),
 ];
 const SidebarMenu = ({
   ChangeComponent,

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Table, Modal, Input, Select } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
+import SEARCH from '../../assets/icons/Search.svg'
 import {
   CaretDownOutlined
 } from '@ant-design/icons';
@@ -312,7 +313,7 @@ const SubscribeApis = ({ openSubscribeModal, handleSubscribeApi }) => {
             onChange={(e) => {
               setSearchedText(e.target.value);
             }}
-            prefix={<SearchOutlined style={{ opacity: "0.2",fontSize:"1.3rem"}} />}
+            prefix={<img src={SEARCH} alt="Search" style={{ opacity: "0.5"}}/>}
             id="searchSubscriptionApi"
             allowClear={true}
             style={{ backgroundColor: "aliceblue", minWidth: "22vw",height:"2.5rem" }}

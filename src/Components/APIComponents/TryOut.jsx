@@ -3,9 +3,9 @@ import HeaderTitle from "./HeaderTitle";
 import {
   EyeTwoTone,
   EyeInvisibleOutlined,
-  LockOutlined,
   CaretDownOutlined,
 } from "@ant-design/icons";
+import Lock from '../../assets/icons/lock.svg'
 import { Input, Select } from "antd";
 const TryOut = () => {
   const [radioCheck, setRadioCheck] = useState("OAuth");
@@ -185,31 +185,31 @@ const TryOut = () => {
           <span>
             <button className="btn-server-calls">Get</button>/*
           </span>
-          <LockOutlined className="lock-server" />
+         <img src={Lock} alt="Lock" />
         </div>
         <div className="bars put">
           <span>
             <button className="btn-server-calls">Put</button>/*
           </span>
-          <LockOutlined className="lock-server" />
+         <img src={Lock} alt="Lock" />
         </div>
         <div className="bars post">
           <span>
             <button className="btn-server-calls">Post</button>/*
           </span>
-          <LockOutlined className="lock-server" />
+         <img src={Lock} alt="Lock" />
         </div>
         <div className="bars delete">
           <span>
             <button className="btn-server-calls">Delete</button>/*
           </span>
-          <LockOutlined className="lock-server" />
+          <img src={Lock} alt="Lock" />
         </div>
         <div className="bars patch">
           <span>
             <button className="btn-server-calls">Patch</button>/*
           </span>
-          <LockOutlined className="lock-server" />
+         <img src={Lock} alt="Lock" />
         </div>
       </div>
     </div>
