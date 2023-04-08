@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
 import DownloadFile from '../../assets/icons/document-downloadSDK.svg'
 import SDK1 from "../../assets/Sdk1.png";
 import SDK2 from "../../assets/Sdk2.png";
@@ -40,10 +40,6 @@ const SDKs = () => {
                 <h2>{title}</h2>
                 <div className="download-sdks">
                   <img src={DownloadFile} alt="DownloadFile" />
-                  {/* <FontAwesomeIcon
-                    icon={faFileArrowDown}
-                    style={{ fontSize: "1.2rem" }}
-                  /> */}
                   <span>Download</span>
                 </div>
               </div>

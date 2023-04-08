@@ -24,9 +24,6 @@ const MenuHeader = ({ handleView, view }) => {
 
       <div className="Menu-Header-Inner">
         {view === "ListView" && <>
-          {/* <FontAwesomeIcon icon={faFileArrowDown} className="ListViewIcons"/> */}
-          {/* <FontAwesomeIcon icon={faPrint} className="ListViewIcons"/> */}
-          {/* <FontAwesomeIcon icon={faFileLines} className="ListViewIcons"/> */}
           <img src={DocumentDownload} alt="DocumentDownload" className="ListViewIcons"/>
           <img src={Printer} alt="Printer" className="ListViewIcons"/>
           <img src={TaskSquare} alt="TaskSquare" className="ListViewIcons"/>
@@ -56,13 +53,10 @@ const MenuHeader = ({ handleView, view }) => {
         </div>
         </>
         }
-        {/* <UnorderedListOutlined className={view !== "ListView" ? "ViewChangeIcon viewChangeInactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }} /> */}
         
-        {/* <FontAwesomeIcon icon={faList} className={view === "ListView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("ListView") }}/> */}
         
         <img src={List} alt="List" className='ViewChangeIcon' onClick={(e) => { e.preventDefault(); handleView("ListView") }}/>
         <img src={Grid} alt="Grid" className='ViewChangeIcon' onClick={(e) => { e.preventDefault(); handleView("GridView") }}/>
-        {/* <SlackOutlined className={view === "GridView" ? "ViewChangeIcon viewChangeactive" : "ViewChangeIcon"} onClick={(e) => { e.preventDefault(); handleView("GridView") }} /> */}
       </div>
     </div>
   )

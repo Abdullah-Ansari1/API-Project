@@ -210,6 +210,14 @@ h5 {
 .ant-menu-dark .ant-menu-item-selected{
   background: transparent !important;
 }
+.Footer{
+  text-align: center;
+  color: var(--primary-color) !important;
+  background: var(--primary-color-00) !important;
+  font-family: var(--body-font) !important;
+  font-size: var(--font-normal) !important;
+  font-weight: 500;
+}
 .noApi-content{
   text-align: center;
   margin: 6rem auto;
@@ -733,8 +741,27 @@ cursor: pointer;
   color: var(--primary-color-40);
   font-weight: var(--font-normal);
   line-height: 20px;
-  max-width: 65vw;
   margin-bottom: var(--mb-1);
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .myApplication-header p {
+    max-width: 76%;
+  }
+}
+.create-application-btn{
+  background: #16375A;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.create-application-main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 1rem;
 }
 .myapplication-title{
   font-weight: var(--font-semi-bold);

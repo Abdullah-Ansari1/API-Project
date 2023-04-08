@@ -1,6 +1,6 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
-import NoDataCard from '.././NoDataCard/NoDataCard';
+import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
+import NoDataCard from '../../Components/NoDataCard/NoDataCard';
 const Documentation = () => {
   return (
     <div>

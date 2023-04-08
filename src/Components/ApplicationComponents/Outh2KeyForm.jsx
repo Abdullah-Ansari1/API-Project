@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import HeaderTitle from "./HeaderTitle";
 import { Input, Checkbox } from "antd";
 import Copy from '../../assets/icons/copy.svg';
-import HeaderTitle from './HeaderTitle';
-const SandboxOAuth = () => {
+
+const Outh2KeyForm = ({title}) => {
   return (
     <div>
       <HeaderTitle />
       <div className="productionkey-title">
-        <h3 className="title-production">Sandbox OAuth2 Key</h3>
+        <h3 className="title-production">{title} OAuth2 Key</h3>
         <p>Key and Secret</p>
       </div>
       <div className="customerandsecretkey">
@@ -131,4 +132,4 @@ const SandboxOAuth = () => {
   )
 }
 
-export default SandboxOAuth
+export default Outh2KeyForm

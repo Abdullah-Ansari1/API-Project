@@ -5,7 +5,7 @@ import { Input } from "antd";
 import Edit from "../../assets/icons/edit.svg";
 import Trash from "../../assets/icons/trash.svg";
 import Search from "../../assets/icons/Search.svg";
-const MyApplication = ({ handleDeleteModal }) => {
+const Application = ({ handleDeleteModal }) => {
   const [searchedText, setSearchedText] = useState("");
 const navigate=useNavigate();
   //  Column Data
@@ -154,4 +154,4 @@ const navigate=useNavigate();
   );
 };
 
-export default MyApplication;
+export default Application;

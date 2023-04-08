@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "../../Components/ApplicationComponents/HeaderTitle";
 import { Table } from "antd";
-import SubscribeApis from "./SubscribeApis";
+import SubscribeApis from "../../Components/ApplicationComponents/SubscribeApis";
 import Edit from "../../assets/icons/edit.svg";
 import Trash from "../../assets/icons/trash.svg";
 const Subscription = ({

@@ -1,6 +1,7 @@
 import React from 'react'
-import HeaderTitle from "./HeaderTitle";
-import NoDataCard from '.././NoDataCard/NoDataCard';
+import HeaderTitle from '../../../Components/ApplicationComponents/HeaderTitle'
+import NoDataCard from '../../../Components/NoDataCard/NoDataCard'
+
 const SandboxKeys = () => {
   return (
     <div>

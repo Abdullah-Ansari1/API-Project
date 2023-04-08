@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
 import { Select, Table } from "antd";
 import KeySquare from "../../assets/icons/key-square.svg";
 import SecurityKey from "../../assets/icons/security-key.svg";

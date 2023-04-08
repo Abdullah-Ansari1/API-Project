@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
 import {
   EyeTwoTone,
   EyeInvisibleOutlined,

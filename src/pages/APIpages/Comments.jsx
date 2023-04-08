@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
 import { PlusCircleFilled } from "@ant-design/icons";
-import NoDataCard from '.././NoDataCard/NoDataCard';
+import NoDataCard from '../../Components/NoDataCard/NoDataCard';
 const Comments = () => {
   return (
     <div>

@@ -1,10 +1,10 @@
 import React from "react";
-import HeaderTitle from "./HeaderTitle";
+import HeaderTitle from '../../Components/ApplicationComponents/HeaderTitle';
 import DescIcon from '../../assets/icons/Description-icon.svg';
 import Bar from '../../assets/icons/doublebar.svg';
 import Checkbox from '../../assets/icons/checkbox.svg';
 import User from '../../assets/icons/user.svg';
-const OverviewApplication = () => {
+const Overview = () => {
   const Data = [
     {
       key:1,
@@ -54,4 +54,4 @@ const OverviewApplication = () => {
   );
 };
 
-export default OverviewApplication;
+export default Overview;

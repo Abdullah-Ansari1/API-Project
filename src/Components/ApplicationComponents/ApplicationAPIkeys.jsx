@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import HeaderTitle from "./HeaderTitle";
 import { Input } from "antd";
 import { PlusCircleFilled } from "@ant-design/icons";
-const ProductionApikeys = ({handleGenearteKeyModal}) => {
-  const [radioCheck, setRadioCheck] = useState("None");
-
+const ApplicationAPIkeys = ({title}) => {
+    const [radioCheck, setRadioCheck] = useState("None");
   return (
     <div>
       <HeaderTitle IpAddress={true} />
       <div className="productionkey-title">
-        <h3>Production API Key</h3>
+        <h3>{title} API Key</h3>
       </div>
       <div className="main-apikey">
         <div className="keys-div">
@@ -162,13 +161,14 @@ const ProductionApikeys = ({handleGenearteKeyModal}) => {
         </div>
       ) : null}
       <div className="apikeyGenerate">
-        <button className="apikeyGenerate-btn" onClick={()=>handleGenearteKeyModal(true)}>Generate Key</button>
+        {/* <button className="apikeyGenerate-btn" onClick={()=>handleGenearteKeyModal(true)}>Generate Key</button> */}
+        <button className="apikeyGenerate-btn" >Generate Key</button>
         <p>
           Use the generate key button to generate a self contained JWT token
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductionApikeys;
+export default ApplicationAPIkeys
