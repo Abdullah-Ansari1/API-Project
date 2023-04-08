@@ -1,11 +1,10 @@
 import React from "react";
-import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
+import {ApiHeaderTitle,NoDataCard} from '../../Components/index';
 import { PlusCircleFilled } from "@ant-design/icons";
-import NoDataCard from '../../Components/NoDataCard/NoDataCard';
 const Comments = () => {
   return (
     <div>
-      <HeaderTitle title={"Comment"} api={"AWSS3Control"} />
+      <ApiHeaderTitle title={"Comment"} api={"AWSS3Control"} />
       <p className="comments-count">0 Comments</p>
       <div className="add-main">
         <PlusCircleFilled className="add-icon" />

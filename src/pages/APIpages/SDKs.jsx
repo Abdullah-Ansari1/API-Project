@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
+import {ApiHeaderTitle} from '../../Components/index';
 import DownloadFile from '../../assets/icons/document-downloadSDK.svg'
 import SDK1 from "../../assets/Sdk1.png";
 import SDK2 from "../../assets/Sdk2.png";
@@ -27,7 +27,7 @@ const SDKS = [
 const SDKs = () => {
   return (
     <div>
-      <HeaderTitle title={"SDKs"} api={"AWSS3Control"} />
+      <ApiHeaderTitle title={"SDKs"} api={"AWSS3Control"} />
       <p className="sdk-title">Software Development Kits (SDKs)</p>
       <div className="Skds">
         {SDKS.map(({ title, img }, index) => {

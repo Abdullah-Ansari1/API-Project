@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
-import { Table } from "antd";
-import { Input } from "antd";
+import { Table,Input } from "antd";
 import Edit from "../../assets/icons/edit.svg";
 import Trash from "../../assets/icons/trash.svg";
 import Search from "../../assets/icons/Search.svg";
-const Application = ({ handleDeleteModal }) => {
+import {handleDeleteModal} from '../../redux/reducers/handleModalsReducers';
+import { useDispatch } from "react-redux";
+
+
+const Application = () => {
   const [searchedText, setSearchedText] = useState("");
+const dispatch = useDispatch();
 const navigate=useNavigate();
   //  Column Data
   const columns = [
@@ -70,7 +74,7 @@ const navigate=useNavigate();
             alt="Trash"
             className="myapplication-delete-icon"
             onClick={() => {
-              handleDeleteModal(true);
+              dispatch(handleDeleteModal(true));
             }}
           />
         </div>
@@ -96,7 +100,7 @@ const navigate=useNavigate();
             alt="Trash"
             className="myapplication-delete-icon"
             onClick={() => {
-              handleDeleteModal(true);
+              dispatch(handleDeleteModal(true));
             }}
           />
         </div>

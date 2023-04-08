@@ -1,11 +1,10 @@
 import React from 'react'
-import HeaderTitle from '../../../Components/ApplicationComponents/HeaderTitle'
-import NoDataCard from '../../../Components/NoDataCard/NoDataCard'
+import {NoDataCard,ApplicationHeaderTitle} from '../../../Components/index';
 
 const SandboxKeys = () => {
   return (
     <div>
-            <HeaderTitle />
+            <ApplicationHeaderTitle />
       <div className="productionkey-title">
         <h3>Sandbox OAuth2 Key</h3>
       </div>

@@ -1,11 +1,10 @@
 import React from 'react'
-import HeaderTitle from '../../../Components/ApplicationComponents/HeaderTitle'
-import NoDataCard from '../../../Components/NoDataCard/NoDataCard'
+import {NoDataCard,ApplicationHeaderTitle} from '../../../Components/index';
 
 const Ouath2Tokens = () => {
   return (
     <div>
-            <HeaderTitle />
+            <ApplicationHeaderTitle />
       <div className="productionkey-title">
         <h3>Production OAuth2 Keys</h3>
       </div>

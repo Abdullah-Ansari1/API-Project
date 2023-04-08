@@ -1,9 +1,10 @@
 import React,{useState} from "react";
-import SidebarMenu from "../Components/SidebarMenu/SidebarMenu";
+import {DeleteModal,GenerateKeyModal,SidebarMenu,SubscribeApiModal,SubscriptionUpdateModal,MainNav} from '../Components/index';
 import { Layout } from "antd";
-import MainNav from "../Components/MainNav/MainNav";
 import { Outlet } from "react-router-dom";
 const { Content, Footer } = Layout;
+
+
 const RootLayout = () => {
   const [changeMenu, setChangeMenu] = useState("api");
   const [selectedComponent, setSelectedComponent] = useState(
@@ -17,6 +18,10 @@ const RootLayout = () => {
   };
   return (
     <>
+    <DeleteModal/>
+    <GenerateKeyModal/>
+    <SubscriptionUpdateModal/>
+    <SubscribeApiModal/>
       <SidebarMenu
         ChangeComponent={ChangeComponent}
         selectedComponent={selectedComponent}

@@ -1,20 +1,23 @@
 import React from 'react'
 import { Modal,Select } from "antd";
-import {
-    CaretDownOutlined
-  } from '@ant-design/icons';
-const SubscriptionUpdateModal = ({ updateSubscriptionModal, handleUpdateSubscriptionModal }) => {
+import { CaretDownOutlined } from '@ant-design/icons';
+import {handleSubscriptionUpdateModal} from '../../redux/reducers/handleModalsReducers';
+import { useSelector,useDispatch } from 'react-redux';
+const SubscriptionUpdateModal = () => {
+    const Modals = useSelector(state=>state.modal);
+    const {openSubscriptionUpdateModal} = Modals;
+    const dispatch = useDispatch();
     const handleOk = () => {
-        handleUpdateSubscriptionModal(false);
+        dispatch(handleSubscriptionUpdateModal(false));
     };
     const handleCancel = () => {
-        handleUpdateSubscriptionModal(false);
+        dispatch(handleSubscriptionUpdateModal(false));
     };
     return (
         <div>
             <Modal
                 className="updateSubscription-Modal"
-                open={updateSubscriptionModal}
+                open={openSubscriptionUpdateModal}
                 onOk={handleOk}
                 onCancel={handleCancel}
                 footer={[

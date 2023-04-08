@@ -4,9 +4,15 @@ import SEARCH from '../../assets/icons/Search.svg'
 import {
   CaretDownOutlined
 } from '@ant-design/icons';
-const SubscribeApiModal = ({ openSubscribeModal, handleSubscribeApi }) => {
+import {handleSubscribeApiModal} from '../../redux/reducers/handleModalsReducers';
+import { useSelector,useDispatch } from 'react-redux';
+const SubscribeApiModal = () => {
+  const Modals = useSelector(state=>state.modal);
+  const {openSubscribeApiModal} = Modals;
+  const dispatch = useDispatch();
+
   const handleCancel = () => {
-    handleSubscribeApi(false);
+    dispatch(handleSubscribeApiModal(false));
   };
   const [searchedText, setSearchedText] = useState("");
 
@@ -320,7 +326,7 @@ const SubscribeApiModal = ({ openSubscribeModal, handleSubscribeApi }) => {
         </div>
       </div>}
         className="subscripeApi-Modal"
-        open={openSubscribeModal}
+        open={openSubscribeApiModal}
         onCancel={handleCancel}
         footer={null}
       >

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
+import {ApiHeaderTitle} from '../../Components/index';
 import {
   EyeTwoTone,
   EyeInvisibleOutlined,
@@ -11,7 +11,7 @@ const TryOut = () => {
   const [radioCheck, setRadioCheck] = useState("OAuth");
   return (
     <div>
-      <HeaderTitle title={"Try Out"} api={"AWSS3Control"} />
+      <ApiHeaderTitle title={"Try Out"} api={"AWSS3Control"} />
       <div className="tryout-header">
         <div className="tryout-left-header">
           <h3 className="tryout-activeTile">Security</h3>
@@ -183,31 +183,31 @@ const TryOut = () => {
         <h2 className="default-heading">Default</h2>
         <div className="bars get">
           <span>
-            <button className="btn-server-calls">Get</button>/*
+            <button className="btn-server-calls">Get</button>{"/*"}
           </span>
          <img src={Lock} alt="Lock" />
         </div>
         <div className="bars put">
           <span>
-            <button className="btn-server-calls">Put</button>/*
+            <button className="btn-server-calls">Put</button>{"/*"}
           </span>
          <img src={Lock} alt="Lock" />
         </div>
         <div className="bars post">
           <span>
-            <button className="btn-server-calls">Post</button>/*
+            <button className="btn-server-calls">Post</button>{"/*"}
           </span>
          <img src={Lock} alt="Lock" />
         </div>
         <div className="bars delete">
           <span>
-            <button className="btn-server-calls">Delete</button>/*
+            <button className="btn-server-calls">Delete</button>{"/*"}
           </span>
           <img src={Lock} alt="Lock" />
         </div>
         <div className="bars patch">
           <span>
-            <button className="btn-server-calls">Patch</button>/*
+            <button className="btn-server-calls">Patch</button>{"/*"}
           </span>
          <img src={Lock} alt="Lock" />
         </div>

@@ -12,7 +12,7 @@ align-items: center;
     object-fit: cover;
 }
 .user-select .ant-select-selector{
-    align-items: end !important;
+    align-items: flex-end !important;
     display: flex;
 }
 .user-select .ant-select-selection-item{

@@ -1,15 +1,13 @@
 import React from "react";
-import HeaderTitle from "../../Components/ApplicationComponents/HeaderTitle";
+import {ApplicationHeaderTitle} from '../../Components/index';
 import { Table } from "antd";
-import SubscribeApis from "../../Components/ApplicationComponents/SubscribeApis";
 import Edit from "../../assets/icons/edit.svg";
 import Trash from "../../assets/icons/trash.svg";
-const Subscription = ({
-  handleSubscribeApi,
-  openSubscribeModal,
-  handleDeleteModal,
-  handleUpdateSubscriptionModal,
-}) => {
+import {handleSubscriptionUpdateModal,handleDeleteModal,handleSubscribeApiModal} from '../../redux/reducers/handleModalsReducers';
+import { useDispatch } from "react-redux";
+const Subscription = () => {
+const dispatch = useDispatch();
+
   const columns = [
     {
       title: "API",
@@ -48,7 +46,7 @@ const Subscription = ({
             alt="Edit"
             className="myapplication-edit-icon"
             onClick={() => {
-              handleUpdateSubscriptionModal(true);
+              dispatch(handleSubscriptionUpdateModal(true));
             }}
           />
           <img
@@ -56,7 +54,7 @@ const Subscription = ({
             alt="Delete"
             className="myapplication-delete-icon"
             onClick={() => {
-              handleDeleteModal(true);
+              dispatch(handleDeleteModal(true));
             }}
           />
         </div>
@@ -75,7 +73,7 @@ const Subscription = ({
             alt="Edit"
             className="myapplication-edit-icon"
             onClick={() => {
-              handleUpdateSubscriptionModal(true);
+              dispatch(handleSubscriptionUpdateModal(true));
             }}
           />
           <img
@@ -83,7 +81,7 @@ const Subscription = ({
             alt="Delete"
             className="myapplication-delete-icon"
             onClick={() => {
-              handleDeleteModal(true);
+              dispatch(handleDeleteModal(true));
             }}
           />
         </div>
@@ -93,16 +91,12 @@ const Subscription = ({
 
   return (
     <div>
-      <SubscribeApis
-        openSubscribeModal={openSubscribeModal}
-        handleSubscribeApi={handleSubscribeApi}
-      />
-      <HeaderTitle />
+      <ApplicationHeaderTitle />
       <div style={{ margin: "1rem 0" }}>
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
           <h3>Subscription Management</h3>
           <span
-            onClick={() => handleSubscribeApi(true)}
+            onClick={() => dispatch(handleSubscribeApiModal(true))}
             className="link-subscribe"
           >
             Subscribe APIs

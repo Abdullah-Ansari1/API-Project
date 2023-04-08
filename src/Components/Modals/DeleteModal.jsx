@@ -1,13 +1,18 @@
 import React from "react";
 import { Modal } from "antd";
 import ReloadIcon from "../../assets/icons/reload-icon.png";
+import { useSelector,useDispatch } from "react-redux";
+import {handleDeleteModal} from '../../redux/reducers/handleModalsReducers';
+const DeleteModal = () => {
+  const Modals = useSelector(state=>state.modal);
+const {openDeleteModal} = Modals;
+const dispatch = useDispatch();
 
-const DeleteModal = ({ openDeleteModal, handleDeleteModal }) => {
   const handleOk = () => {
-    handleDeleteModal(false);
+    dispatch(handleDeleteModal(false));
   };
   const handleCancel = () => {
-    handleDeleteModal(false);
+    dispatch(handleDeleteModal(false));
   };
   return (
     <div>

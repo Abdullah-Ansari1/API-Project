@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTitle from '../../Components/ApplicationComponents/HeaderTitle';
+import {ApplicationHeaderTitle} from '../../Components/index';
 import DescIcon from '../../assets/icons/Description-icon.svg';
 import Bar from '../../assets/icons/doublebar.svg';
 import Checkbox from '../../assets/icons/checkbox.svg';
@@ -33,12 +33,12 @@ const Overview = () => {
   ];
   return (
     <div>
-      <HeaderTitle />
+      <ApplicationHeaderTitle />
       <div className="overviewContent">
         {Data.map((item) => {
           return (
             <div key={item.key}>
-              <div className="content-item" style={item.key==1?{ marginTop: "10px" }:null}>
+              <div className="content-item" style={item.key===1?{ marginTop: "10px" }:null}>
                 <div className="icon-item">
                   {item.icon}
                   <p className="overview-title">{item.title}</p>

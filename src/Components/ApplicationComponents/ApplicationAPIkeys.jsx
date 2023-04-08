@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import HeaderTitle from "./HeaderTitle";
 import { Input } from "antd";
 import { PlusCircleFilled } from "@ant-design/icons";
+import { useDispatch } from "react-redux";
+import {handleGenerateKeyModal} from '../../redux/reducers/handleModalsReducers';
 const ApplicationAPIkeys = ({title}) => {
     const [radioCheck, setRadioCheck] = useState("None");
+const dispatch = useDispatch();
+
   return (
     <div>
       <HeaderTitle IpAddress={true} />
@@ -161,8 +165,7 @@ const ApplicationAPIkeys = ({title}) => {
         </div>
       ) : null}
       <div className="apikeyGenerate">
-        {/* <button className="apikeyGenerate-btn" onClick={()=>handleGenearteKeyModal(true)}>Generate Key</button> */}
-        <button className="apikeyGenerate-btn" >Generate Key</button>
+        <button className="apikeyGenerate-btn" onClick={()=>{dispatch(handleGenerateKeyModal(true))}}>Generate Key</button>
         <p>
           Use the generate key button to generate a self contained JWT token
         </p>

@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderTitle from "../../Components/APIComponents/HeaderTitle";
+import {ApiHeaderTitle} from '../../Components/index';
 import { Select, Table } from "antd";
 import KeySquare from "../../assets/icons/key-square.svg";
 import SecurityKey from "../../assets/icons/security-key.svg";
@@ -100,7 +100,7 @@ const data = [
 const Subscriptions = () => {
   return (
     <div>
-      <HeaderTitle title={"Subscriptions"} api={"AWSS3Control"} />
+      <ApiHeaderTitle title={"Subscriptions"} api={"AWSS3Control"} />
       <div style={{ marginTop: "2rem" }}>
         <p className="subscription-title">
           Subscription & Key Generation Wizard

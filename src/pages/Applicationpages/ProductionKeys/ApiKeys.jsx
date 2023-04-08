@@ -1,9 +1,9 @@
 import React from 'react'
-import ApplicationAPIkeys from '../../../Components/ApplicationComponents/ApplicationAPIkeys'
+import {ApplicationAPIKeys} from '../../../Components/index';
 
 const ApiKeys = () => {
   return (
-<ApplicationAPIkeys title={"Production"}/>
+<ApplicationAPIKeys title={"Production"}/>
   )
 }
 

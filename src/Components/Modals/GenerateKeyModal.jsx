@@ -1,18 +1,23 @@
 import React from "react";
 import { Modal, Checkbox, ConfigProvider } from "antd";
+import { useSelector,useDispatch } from "react-redux";
+import {handleGenerateKeyModal} from '../../redux/reducers/handleModalsReducers';
+const GenerateKeyModal = () => {
+  const Modals = useSelector(state=>state.modal);
+const {openGenerateKeyModal} = Modals;
+const dispatch = useDispatch();
 
-const GenerateKeyModal = ({ generateKeyModal, handleGenearteKeyModal }) => {
   const handleOk = () => {
-    handleGenearteKeyModal(false);
+    dispatch(handleGenerateKeyModal(false));
   };
   const handleCancel = () => {
-    handleGenearteKeyModal(false);
+    dispatch(handleGenerateKeyModal(false));
   };
   return (
     <div>
       <Modal
         className="DeleteModal"
-        open={generateKeyModal}
+        open={openGenerateKeyModal}
         onOk={handleOk}
         onCancel={handleCancel}
         footer={[

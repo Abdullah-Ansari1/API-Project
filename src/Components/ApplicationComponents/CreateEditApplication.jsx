@@ -2,7 +2,7 @@ import React from "react";
 import { Input, Select } from "antd";
 import { CaretDownOutlined } from "@ant-design/icons";
 const { TextArea } = Input;
-const CreateEditApplication = ({ title, handleEditSection }) => {
+const CreateEditApplication = ({ title }) => {
   return (
     <div>
       <div className="editApplication-header">
@@ -82,10 +82,10 @@ const CreateEditApplication = ({ title, handleEditSection }) => {
         />
       </div>
       <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
-        <button className="save-btn" onClick={() => handleEditSection(false)}>
+        <button className="save-btn" >
           Save
         </button>
-        <button className="cancel-btn" onClick={() => handleEditSection(false)}>
+        <button className="cancel-btn" >
           Cancel
         </button>
       </div>

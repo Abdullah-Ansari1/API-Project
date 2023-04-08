@@ -1,5 +1,5 @@
 import React from 'react'
-import Outh2KeyForm from '../../../Components/ApplicationComponents/Outh2KeyForm'
+import {Outh2KeyForm} from '../../../Components/index';
 
 const Ouath2Tokens = () => {
   return (

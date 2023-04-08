@@ -1,8 +1,5 @@
 import React,{useState} from "react";
-import MenuHeader from "../../Components/MenuHeader/MenuHeader";
-import ListView from "../../Components/APIComponents/ListView/ListView";
-import GridView from "../../Components/APIComponents/GridView/GridView";
-
+import {GridView,ListView,MenuHeader} from '../../Components/index';
 const Overview = () => {
   const [view, setView] = useState("ListView");
 

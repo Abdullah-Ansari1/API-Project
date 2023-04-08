@@ -1,5 +1,5 @@
 import React from 'react'
-import CreateEditApplication from '../../Components/ApplicationComponents/CreateEditApplication'
+import {CreateEditApplication} from '../../Components/index';
 
 const CreateApplication = () => {
   return (

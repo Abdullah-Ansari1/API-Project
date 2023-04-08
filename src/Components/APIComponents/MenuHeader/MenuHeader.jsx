@@ -2,12 +2,12 @@ import React from 'react'
 import {
   CaretDownOutlined
 } from '@ant-design/icons';
-import DocumentDownload from '../../assets/icons/document-download.svg'
-import Printer from '../../assets/icons/printer.svg'
-import TaskSquare from '../../assets/icons/task-square.svg'
-import Grid from '../../assets/icons/grid.svg'
-import List from '../../assets/icons/list.svg'
-import Code from '../../assets/icons/code.svg'
+import DocumentDownload from '../../../assets/icons/document-download.svg'
+import Printer from '../../../assets/icons/printer.svg'
+import TaskSquare from '../../../assets/icons/task-square.svg'
+import Grid from '../../../assets/icons/grid.svg'
+import List from '../../../assets/icons/list.svg'
+import Code from '../../../assets/icons/code.svg'
 
 import { Select } from 'antd';
 import './MenuHeader.css'
