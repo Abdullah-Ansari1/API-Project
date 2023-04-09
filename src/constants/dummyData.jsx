@@ -1,8 +1,12 @@
 import {SDK1,SDK2,SDK3,SDK4,ApiSetting} from '../assets/index';
   import {
-    StarFilled
+    StarFilled,
+    CaretDownOutlined
   } from '@ant-design/icons';
+import { Select } from 'antd';
 
+
+// Grid Data
 export const GridViewData = [
     {
       key: '1',
@@ -42,7 +46,7 @@ export const GridViewData = [
     },
   ];
 
-
+// List Data
   export const ListViewColumns = [
       {
         title: 'Name',
@@ -134,6 +138,276 @@ export const GridViewData = [
       </div>,    
       },
     ];
+
+// SubscriptionAPI Modal Data
+export const SubscriptionModalApidata = [
+    {
+      key: "1",
+      name: "AWSS3Control",
+      version: "2018-08-20",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "2",
+      name: "AWSS3Control",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "3",
+      name: "AWSS3Control",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "4",
+      name: "AWSS3Control",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "5",
+      name: "AWSS3Control 5",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "6",
+      name: "AWSS3Control 6",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Unlimited"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "7",
+      name: "AWSS3Control 7",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+    {
+      key: "8",
+      name: "AWSS3Control 8",
+      version: "1",
+      status: (
+        <div className="subscripeapi-status">
+          <Select
+          suffixIcon={<CaretDownOutlined className="ant-select-suffix downarrow-select"/>}
+            defaultValue="Bronze"
+            className="subscribeApi-select"
+            options={[
+              {
+                value: "Bronze",
+                label: "Bronze",
+              },
+              {
+                value: "Unlimited",
+                label: "Unlimited",
+              },
+              {
+                value: "Label3",
+                label: "Label3",
+              },
+              {
+                value: "Label4",
+                label: "Label4",
+              },
+            ]}
+          />
+          <button className="subscribeApis-btn">Subscribe</button>
+        </div>
+      ),
+    },
+  ];
+
+// SDKS Data
 export const SDKS = [
     {
       title: "Android",

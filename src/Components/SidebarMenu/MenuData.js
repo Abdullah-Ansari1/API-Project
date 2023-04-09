@@ -1,91 +1,127 @@
-import {OverViewIcon,OverViewActiveIcon} from "../../assets/index";
-import subscriptionIcon from "../../assets/icons/subscription-icon.svg";
-import apiKeyIcon from "../../assets/icons/apikey-icon.svg";
-import OuathTokenIcon from "../../assets/icons/OuathToken-icon.svg";
-import SandboxKeyIcon from "../../assets/icons/sandboxkey-icon.svg";
-import ProductionKeysIcon from "../../assets/icons/productionKeys-icon.svg";
-import commentsIcon from "../../assets/icons/comments.svg";
-import SdkIcon from "../../assets/icons/sdk.svg";
-import documentIcon from "../../assets/icons/document.svg";
-function getItem(label, key, icon, children) {
-    return {
-      key,
-      icon,
-      children,
-      label,
-    };
-  }
+import {
+  OverViewIcon,
+  OverViewActiveIcon,
+  SubscriptionIcon,
+  SubActiveIcon,
+  ApiKeyIcon,
+  ApiKeyActiveIcon,
+  OuathTokenIcon,
+  OuathTokenActiveIcon,
+  SandboxKeyIcon,
+  SandboxKeyActiveIcon,
+  ProductionKeysIcon,
+  ProductionKeysActiveIcon,
+  CommentIcon,
+  CommentActiveIcon,
+  SdkIcon,
+  SdkActiveIcon,
+  DocumentIcon,
+  DocumentActiveIcon,
+} from "../../assets/index";
 
 export const ApiMenu = [
-    getItem(
-      "Overview",
-      "/api/overview",
-      // <img src={OverViewIcon} alt="Overview" />
-      <OverViewIcon/>
-    ),
-    getItem(
-      "Subscriptions",
-      "/api/subscription",
-      <img src={subscriptionIcon} alt="subscriptionIcon" />
-    ),
-    getItem(
-      "Try Out",
-      "/api/tryout",
-      <img src={SandboxKeyIcon} alt="SandboxKeyIcon" />
-    ),
-    getItem(
-      "Comments",
-      "/api/comments",
-      <img src={commentsIcon} alt="commentsicon" />
-    ),
-    getItem(
-      "Documentation",
-      "/api/documentation",
-      <img src={documentIcon} alt="documentIcon" />
-    ),
-    getItem("SDKs", "/api/sdks", <img src={SdkIcon} alt="sdk" />),
-  ];
+  {
+    key: "/api/overview",
+    label: "Overview",
+    icon: <OverViewIcon />,
+    activeIcon: <OverViewActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/api/subscription",
+    label: "Subscriptions",
+    icon: <SubscriptionIcon />,
+    activeIcon: <SubActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/api/tryout",
+    label: "Try Out",
+    icon: <SandboxKeyIcon />,
+    activeIcon: <SandboxKeyActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/api/comments",
+    label: "Comments",
+    icon: <CommentIcon />,
+    activeIcon: <CommentActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/api/documentation",
+    label: "Documentation",
+    icon: <DocumentIcon />,
+    activeIcon: <DocumentActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/api/sdks",
+    label: "SDKs",
+    icon: <SdkIcon />,
+    activeIcon: <SdkActiveIcon />,
+    children: null,
+  },
+];
 
 export const ApplicationMenu = [
-    getItem(
-      "Overview",
-      "/application/overview",
-      // <img src={OverViewIcon} alt="Overview" />
-      <OverViewIcon/>
-    ),
-    getItem(
-      "Production Keys",
-      "/application/productionkeys",
-      <img src={ProductionKeysIcon} alt="ProductionKeysIcon" />
-    ),
-    getItem(
-      "OAuth2 Tokens",
-      "/application/productionOauth2tokens",
-      <img src={OuathTokenIcon} alt="OuathTokenIcon" />
-    ),
-    getItem(
-      "API Keys",
-      "/application/productionapikeys",
-      <img src={apiKeyIcon} alt="apiKeyIcon" />
-    ),
-    getItem(
-      "Sandbox Keys",
-      "/application/sandboxkeys",
-      <img src={SandboxKeyIcon} alt="SandboxKeyIcon" />
-    ),
-    getItem(
-      "Oauth2 Tokens",
-      "/application/sandboxOauth2tokens",
-      <img src={OuathTokenIcon} alt="OuathTokenIcon" />
-    ),
-    getItem(
-      "API Keys",
-      "/application/sandboxapikeys",
-      <img src={apiKeyIcon} alt="apiKeyIcon" />
-    ),
-    getItem(
-      "Subscription",
-      "/application/subscription",
-      <img src={subscriptionIcon} alt="subscriptionIcon" />
-    ),
-  ];
+  {
+    key: "/application/overview",
+    label: "Overview",
+    icon: <OverViewIcon />,
+    activeIcon: <OverViewActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/productionkeys",
+    label: "Production Keys",
+    icon: <ProductionKeysIcon />,
+    activeIcon: <ProductionKeysActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/productionOauth2tokens",
+    label: "OAuth2 Tokens",
+    icon: <OuathTokenIcon />,
+    activeIcon: <OuathTokenActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/productionapikeys",
+    label: "API Keys",
+    icon: <ApiKeyIcon />,
+    activeIcon: <ApiKeyActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/sandboxkeys",
+    label: "Sandbox Keys",
+    icon: <SandboxKeyIcon />,
+    activeIcon: <SandboxKeyActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/sandboxOauth2tokens",
+    label: "Oauth2 Tokens",
+    icon: <OuathTokenIcon />,
+    activeIcon: <OuathTokenActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/sandboxapikeys",
+    label: "API Keys",
+    icon: <ApiKeyIcon />,
+    activeIcon: <ApiKeyActiveIcon />,
+    children: null,
+  },
+  {
+    key: "/application/subscription",
+    label: "Subscription",
+    icon: <SubscriptionIcon />,
+    activeIcon: <SubActiveIcon />,
+    children: null,
+  },
+];
+
+
+
