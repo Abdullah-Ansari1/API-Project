@@ -20,3 +20,16 @@ font-weight: var(--font-medium) !important;
 font-family: var(--body-font) !important;
 color: var(--primary-color) !important;
 }
+.Main-Nav-Header .ant-select-dropdown{
+margin-top: 5rem !important;
+}
+.logout-Select{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.changePassword-Select{
+    display: flex;
+    gap: 1rem;
+    align-items: center; 
+}

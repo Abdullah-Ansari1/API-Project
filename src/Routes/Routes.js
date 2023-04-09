@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import {
+  API,
   APIOverview,
   APISubscription,
   TryOut,
@@ -27,7 +28,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <APIOverview />,
+        element: <API />,
+      },
+      {
+        path: "/api",
+        element: <API />,
       },
       {
         path: "/api/overview",

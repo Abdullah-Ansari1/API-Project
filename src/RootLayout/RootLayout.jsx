@@ -7,9 +7,7 @@ const { Content, Footer } = Layout;
 
 const RootLayout = () => {
   const [changeMenu, setChangeMenu] = useState("api");
-  const [selectedComponent, setSelectedComponent] = useState(
-    changeMenu === "api" ? "overview" : ""
-  );
+  const [selectedComponent, setSelectedComponent] = useState("");
   const ChangeComponent = (item) => {
     setSelectedComponent(item);
   };

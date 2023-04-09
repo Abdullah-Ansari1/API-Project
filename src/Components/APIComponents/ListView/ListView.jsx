@@ -1,15 +1,15 @@
 import React from "react";
 import { Table } from "antd";
-import { columns, data } from "./TableData";
-import Code from "../../../assets/icons/code.svg";
+import { ListViewColumns, ListViewData } from "../../../constants/dummyData";
+// import { CodeIcon } from "../../../assets";
 import "./ListView.css";
 const ListView = () => {
   return (
     <>
       <div className="Table">
         <Table
-          columns={columns}
-          dataSource={data}
+          columns={ListViewColumns}
+          dataSource={ListViewData}
           className="listview-table"
           pagination={false}
         />

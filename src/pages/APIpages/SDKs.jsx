@@ -1,29 +1,7 @@
 import React from "react";
 import {ApiHeaderTitle} from '../../Components/index';
 import DownloadFile from '../../assets/icons/document-downloadSDK.svg'
-import SDK1 from "../../assets/Sdk1.png";
-import SDK2 from "../../assets/Sdk2.png";
-import SDK3 from "../../assets/Sdk3.png";
-import SDK4 from "../../assets/Sdk4.png";
-
-const SDKS = [
-  {
-    title: "Android",
-    img: SDK1,
-  },
-  {
-    title: "Java",
-    img: SDK2,
-  },
-  {
-    title: "JavaScript",
-    img: SDK3,
-  },
-  {
-    title: "JMeter",
-    img: SDK4,
-  },
-];
+import {SDKS} from '../../constants/dummyData';
 const SDKs = () => {
   return (
     <div>

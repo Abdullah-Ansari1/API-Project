@@ -1,7 +1,6 @@
 import React from "react";
 import { Input, Select, theme } from "antd";
-import Search from '../../assets/icons/Search.svg'
-import SelectDownArrow from '../../assets/icons/selectdown-arrow.svg'
+import {SelectDownArrowIcon,SearchIcon,ChangePasswordIcon,LogoutIcon} from '../../assets/index';
 import "./MainNav.css";
 
 const MainNav = () => {
@@ -20,7 +19,7 @@ const MainNav = () => {
           <Input
             size="large"
             placeholder="Search anything..."
-            prefix={<img src={Search} alt="Search"/>}
+            prefix={<SearchIcon/>}
             id="searchInput"
             allowClear={true}
             style={{ backgroundColor: "#D9E7EF" }}
@@ -35,9 +34,11 @@ const MainNav = () => {
             className="userImage"
           />
           <Select
-          suffixIcon={<img src={SelectDownArrow} alt="SelectDownArrow" className="ant-select-suffix downarrow-select"/>}
-            defaultValue="admin"
+          suffixIcon={<SelectDownArrowIcon className="ant-select-suffix downarrow-select"/>}
+            value={"admin"}
             bordered={false}
+            placement={"bottomRight"}
+            dropdownMatchSelectWidth={200}
             className="user-select"
             style={{
               width: 100,
@@ -49,11 +50,11 @@ const MainNav = () => {
               },
               {
                 value: "lucy",
-                label: "Lucy",
+                label: <div className="changePassword-Select"><ChangePasswordIcon/>Change password</div>,
               },
               {
-                value: "Yiminghe",
-                label: "yiminghe",
+                value: "lucy",
+                label: <div className="logout-Select"><LogoutIcon/>Logout</div>,
               },
             ]}
           />

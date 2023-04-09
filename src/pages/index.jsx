@@ -1,3 +1,4 @@
+export {default as API} from './APIpages/API';
 export {default as TryOut} from './APIpages/Tryout';
 export {default as APIOverview} from './APIpages/Overview';
 export {default as APISubscription} from './APIpages/Subscriptions';

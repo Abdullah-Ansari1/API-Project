@@ -1,14 +1,14 @@
 import React from "react";
 import { Card } from "antd";
 import { StarFilled } from "@ant-design/icons";
-import { data } from "./CardData";
+import { GridViewData } from "../../../constants/dummyData";
 import Code from "../../../assets/icons/code.svg";
 import "./GridView.css";
 const GridView = () => {
   return (
     <div>
       <div className="GridViewCards">
-        {data.map((item, index) => {
+        {GridViewData.map((item, index) => {
           return (
             <Card
               key={item.key}

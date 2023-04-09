@@ -1,4 +1,4 @@
-import OverViewIcon from "../../assets/icons/overview-icon.svg";
+import {OverViewIcon,OverViewActiveIcon} from "../../assets/index";
 import subscriptionIcon from "../../assets/icons/subscription-icon.svg";
 import apiKeyIcon from "../../assets/icons/apikey-icon.svg";
 import OuathTokenIcon from "../../assets/icons/OuathToken-icon.svg";
@@ -7,7 +7,6 @@ import ProductionKeysIcon from "../../assets/icons/productionKeys-icon.svg";
 import commentsIcon from "../../assets/icons/comments.svg";
 import SdkIcon from "../../assets/icons/sdk.svg";
 import documentIcon from "../../assets/icons/document.svg";
-
 function getItem(label, key, icon, children) {
     return {
       key,
@@ -21,7 +20,8 @@ export const ApiMenu = [
     getItem(
       "Overview",
       "/api/overview",
-      <img src={OverViewIcon} alt="Overview" />
+      // <img src={OverViewIcon} alt="Overview" />
+      <OverViewIcon/>
     ),
     getItem(
       "Subscriptions",
@@ -50,7 +50,8 @@ export const ApplicationMenu = [
     getItem(
       "Overview",
       "/application/overview",
-      <img src={OverViewIcon} alt="Overview" />
+      // <img src={OverViewIcon} alt="Overview" />
+      <OverViewIcon/>
     ),
     getItem(
       "Production Keys",
