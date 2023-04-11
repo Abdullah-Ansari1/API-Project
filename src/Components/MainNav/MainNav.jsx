@@ -49,11 +49,11 @@ const MainNav = () => {
                 label: "Admin",
               },
               {
-                value: "lucy",
+                value: "changePassword",
                 label: <div className="changePassword-Select"><ChangePasswordIcon/>Change password</div>,
               },
               {
-                value: "lucy",
+                value: "logout",
                 label: <div className="logout-Select"><LogoutIcon/>Logout</div>,
               },
             ]}

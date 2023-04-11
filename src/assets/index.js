@@ -56,7 +56,11 @@ import SDK3 from './Sdk3.png';
 import SDK4 from './Sdk4.png';
 import ApiSetting from './icons/apiSetting.svg'
 
-// export { ReactComponent as ApiSettingIcon } from "./icons/apiSetting.svg";
+export { ReactComponent as HE } from "./HE.svg";
+
+export { ReactComponent as PrinterLight } from "./icons/printer-light.svg";
+export { ReactComponent as AddOverviewCommentIcon } from "./icons/add-overview.svg";
+export { ReactComponent as DownloadSwaggerIcon } from "./icons/download-swagger.svg";
 
 export { ReactComponent as SelectDownArrowIcon } from "./icons/selectdown-arrow.svg";
 export { ReactComponent as SearchIcon } from "./icons/Search.svg";

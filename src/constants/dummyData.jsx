@@ -426,3 +426,28 @@ export const SDKS = [
       img: SDK4,
     },
   ];
+
+  // API Overview tags
+  export const Tags=[
+    {
+      title:"Tags 1"
+    },
+    {
+      title:"Tags 2"
+    },
+    {
+      title:"Tags 3"
+    },
+    {
+      title:"Tags 4"
+    },
+    {
+      title:"Tags 5"
+    },
+    {
+      title:"Tags 6"
+    },
+    {
+      title:"Tags 7"
+    },
+  ]
