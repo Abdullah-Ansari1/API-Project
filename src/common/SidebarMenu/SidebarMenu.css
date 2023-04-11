@@ -26,6 +26,9 @@
     transition: all 0.4s;
     
     }
+    .api-btn{
+      width: 50%;
+    }
   }
 .button-div{
   display: flex;
@@ -34,7 +37,6 @@
   padding: 1rem;
 }
 .api-btn{
-  width: 50%;
   background: none !important;
   border: none !important;
   color: aliceblue;
@@ -51,3 +53,4 @@
   .ant-menu-item-selected{
     background: inherit !important;
   } */
+  .ant-menu-inline-collapsed-tooltip { display: none; }

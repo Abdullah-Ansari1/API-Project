@@ -6,9 +6,12 @@ import {
   CaretDownOutlined,
 } from "@ant-design/icons";
 import Lock from '../../assets/icons/lock.svg'
-import { Input, Select } from "antd";
+import { Input, Select,Radio } from "antd";
 const TryOut = () => {
   const [radioCheck, setRadioCheck] = useState("OAuth");
+  const handleSecurityType=(e)=>{
+    setRadioCheck(e.target.value);
+  }
   return (
     <div>
       <ApiHeaderTitle title={"Try Out"} api={"AWSS3Control"} />
@@ -16,58 +19,12 @@ const TryOut = () => {
         <div className="tryout-left-header">
           <h3 className="tryout-activeTile">Security</h3>
           <p className="tryout-type">Security Type</p>
-          <div className="radio-div">
-            <span
-              onClick={(e) => setRadioCheck("OAuth")}
-              className="radiodiv-span"
-            >
-              <input
-                name="OAuth"
-                type="radio"
-                className="OAuth radio-btn"
-                value={radioCheck}
-                checked={radioCheck === "OAuth"}
-                style={{ cursor: "pointer" }}
-                // onChange={(e) => {
-                //     setRadioCheck("OAuth");
-                // }}
-              />
-              <label htmlFor="OAuth">OAuth</label>
-            </span>
-            <span
-              onClick={(e) => setRadioCheck("APIKey")}
-              className="radiodiv-span"
-            >
-              <input
-                name="APIKey"
-                type="radio"
-                className="APIKey radio-btn"
-                value={radioCheck}
-                checked={radioCheck === "APIKey"}
-                style={{ cursor: "pointer" }}
-                // onChange={(e) => {
-                //     setRadioCheck("APIKey");
-                // }}
-              />
-              <label htmlFor="APIKey">API Key</label>
-            </span>
-            <span
-              onClick={(e) => setRadioCheck("Basic")}
-              className="radiodiv-span"
-            >
-              <input
-                name="Basic"
-                type="radio"
-                className="Basic radio-btn"
-                value={radioCheck}
-                checked={radioCheck === "Basic"}
-                style={{ cursor: "pointer" }}
-                // onChange={(e) => {
-                //     setRadioCheck("Basic");
-                // }}
-              />
-              <label htmlFor="Basic">Basic</label>
-            </span>
+          <div className="security-keys">
+    <Radio.Group onChange={handleSecurityType} value={radioCheck} buttonStyle={"solid"}>
+      <Radio value={"OAuth"}>OAuth</Radio>
+      <Radio value={"APIKey"}>API Key</Radio>
+      <Radio value={"Basic"}>Basic</Radio>
+    </Radio.Group>
           </div>
         </div>
         <div className="tryout-right-header">

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import HeaderTitle from "./HeaderTitle";
-import { Input } from "antd";
+import { Input,Radio } from "antd";
 import { PlusCircleFilled } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
-import {handleGenerateKeyModal} from '../../redux/reducers/handleModalsReducers';
+import {handleGenerateKeyModal, handleSubscriptionUpdateModal} from '../../redux/reducers/handleModalsReducers';
 const ApplicationAPIkeys = ({title}) => {
     const [radioCheck, setRadioCheck] = useState("None");
 const dispatch = useDispatch();
-
+const handleKeyRestriction=(e)=>{
+  setRadioCheck(e.target.value);
+}
   return (
     <div>
       <HeaderTitle IpAddress={true} />
@@ -18,92 +20,11 @@ const dispatch = useDispatch();
         <div className="keys-div">
           <p>Key Restriction</p>
           <div className="key-manage">
-            <div className="radio-div">
-              <div
-                className="key-restriction-radio"
-                onClick={(e) => {
-                  setRadioCheck("None");
-                }}
-              >
-                <input
-                  name="None"
-                  type="radio"
-                  className="None radio-btn"
-                  value={radioCheck}
-                  checked={radioCheck === "None"}
-                  onChange={(e) => {
-                    setRadioCheck("None");
-                  }}
-                />
-                <label
-                  htmlFor="None"
-                  className="radio-label-res"
-                  style={
-                    radioCheck === "None"
-                      ? { color: "#14142A" }
-                      : { color: "#6E7191" }
-                  }
-                >
-                  None
-                </label>
-              </div>
-              <div
-                className="key-restriction-radio"
-                onClick={(e) => {
-                  setRadioCheck("IpAddress");
-                }}
-              >
-                <input
-                  name="IpAddress"
-                  type="radio"
-                  className="IpAddress radio-btn"
-                  value={radioCheck}
-                  checked={radioCheck === "IpAddress"}
-                  onChange={(e) => {
-                    setRadioCheck("IpAddress");
-                  }}
-                />
-                <label
-                  htmlFor="IpAddress"
-                  className="radio-label-res"
-                  style={
-                    radioCheck === "IpAddress"
-                      ? { color: "#14142A" }
-                      : { color: "#6E7191" }
-                  }
-                >
-                  IP Address
-                </label>
-              </div>
-              <div
-                className="key-restriction-radio"
-                onClick={(e) => {
-                  setRadioCheck("Referrers");
-                }}
-              >
-                <input
-                  name="Referrers"
-                  type="radio"
-                  className="Referrers radio-btn"
-                  value={radioCheck}
-                  checked={radioCheck === "Referrers"}
-                  onChange={(e) => {
-                    setRadioCheck("Referrers");
-                  }}
-                />
-                <label
-                  htmlFor="Referrers"
-                  className="radio-label-res"
-                  style={
-                    radioCheck === "Referrers"
-                      ? { color: "#14142A" }
-                      : { color: "#6E7191" }
-                  }
-                >
-                  HTTP Referrers(Web Sites)
-                </label>
-              </div>
-            </div>
+      <Radio.Group onChange={handleKeyRestriction} value={radioCheck} buttonStyle={"solid"}>
+      <Radio value={"None"}>None</Radio>
+      <Radio value={"IpAddress"}>IP Address</Radio>
+      <Radio value={"Referrers"}>HTTP Referrers(Web Sites)</Radio>
+    </Radio.Group>
           </div>
         </div>
 

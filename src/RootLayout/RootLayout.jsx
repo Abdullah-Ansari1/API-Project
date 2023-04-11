@@ -1,12 +1,13 @@
 import React,{useState} from "react";
-import {DeleteModal,GenerateKeyModal,SidebarMenu,SubscribeApiModal,SubscriptionUpdateModal,MainNav} from '../Components/index';
+import {DeleteModal,GenerateKeyModal,SubscribeApiModal,SubscriptionUpdateModal} from '../Components';
+import { SidebarMenu,MainNav } from "../common";
 import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
 const { Content, Footer } = Layout;
 
 
 const RootLayout = () => {
-  const [changeMenu, setChangeMenu] = useState("api");
+  const [changeMenu, setChangeMenu] = useState("");
   const [selectedComponent, setSelectedComponent] = useState("");
   const ChangeComponent = (item) => {
     setSelectedComponent(item);

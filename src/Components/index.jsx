@@ -6,9 +6,7 @@ export { default as ApplicationAPIKeys} from './ApplicationComponents/Applicatio
 export { default as CreateEditApplication } from './ApplicationComponents/CreateEditApplication';
 export { default as ApplicationHeaderTitle } from './ApplicationComponents/HeaderTitle';
 export { default as Outh2KeyForm } from './ApplicationComponents/Outh2KeyForm';
-export { default as MainNav } from './MainNav/MainNav';
 export { default as  NoDataCard} from './NoDataCard/NoDataCard';
-export { default as SidebarMenu } from './SidebarMenu/SidebarMenu';
 export { default as DeleteModal } from './Modals/DeleteModal';
 export { default as GenerateKeyModal } from './Modals/GenerateKeyModal';
 export { default as SubscribeApiModal } from './Modals/SubscribeApiModal';

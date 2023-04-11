@@ -18,7 +18,7 @@ import {
   SandboxApikey,
   SandboxKeys,
   SandboxOAuth
-} from "../pages/index";
+} from "../pages";
 import RootLayout from "../RootLayout/RootLayout";
 
 export const router = createBrowserRouter([
