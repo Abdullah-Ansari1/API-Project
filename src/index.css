@@ -567,12 +567,11 @@ margin-bottom: 1rem;
   background-color: white !important;
 }
 .ant-radio-wrapper .ant-radio-checked .ant-radio-inner::after{
-  transform: scale(0.95) !important;
+  transform: scale(0.7) !important;
   background: var(--primary-color);
 }
 .ant-radio-wrapper .ant-radio-inner{
-  width: 20px;
-  height: 20px;
+  transform: scale(1.5);
   background: #E6F4F9 !important;
 }
 .access-tokenlabel {

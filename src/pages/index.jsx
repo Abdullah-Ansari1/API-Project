@@ -16,3 +16,5 @@ export {default as ProductionApikeys} from './Applicationpages/ProductionKeys/Ap
 export {default as SandboxKeys} from './Applicationpages/Sanboxkeys/SandboxKeys';
 export {default as SandboxOAuth} from './Applicationpages/Sanboxkeys/Ouath2Tokens';
 export {default as SandboxApikey} from './Applicationpages/Sanboxkeys/ApiKeys';
+export {default as Dashboard} from './Dashboardpages/Dashboard';
+export {default as APICategories} from './Dashboardpages/ApiCategories';

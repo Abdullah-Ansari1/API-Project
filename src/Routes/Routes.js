@@ -17,7 +17,9 @@ import {
   ProductionOAuth,
   SandboxApikey,
   SandboxKeys,
-  SandboxOAuth
+  SandboxOAuth,
+  Dashboard,
+  APICategories
 } from "../pages";
 import RootLayout from "../RootLayout/RootLayout";
 
@@ -101,6 +103,14 @@ export const router = createBrowserRouter([
       {
         path: "/application/subscription",
         element: <ApplicationSubscription />,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/dashboard/apicategories",
+        element: <APICategories />,
       },
     ],
   },

@@ -35,6 +35,21 @@ export { ReactComponent as ProductionKeysIcon } from "./icons/productionKeys-ico
 export { ReactComponent as CommentIcon } from "./icons/comments.svg";
 export { ReactComponent as SdkIcon } from "./icons/sdk.svg";
 export { ReactComponent as DocumentIcon } from "./icons/document.svg";
+export { ReactComponent as AppMobile } from "./icons/app-mobile.svg";
+export { ReactComponent as CodeApiState } from "./icons/code-apistate.svg";
+export { ReactComponent as CodeProductState } from "./icons/code-product-state.svg";
+export { ReactComponent as Data2 } from "./icons/data-2.svg";
+export { ReactComponent as Driver } from "./icons/driver.svg";
+export { ReactComponent as Gateway } from "./icons/Gateway.svg";
+export { ReactComponent as InfoCurly } from "./icons/info-curly.svg";
+export { ReactComponent as MouseSquare } from "./icons/mouse-square.svg";
+export { ReactComponent as Profile2User } from "./icons/profile-2user.svg";
+export { ReactComponent as Setting2 } from "./icons/setting2.svg";
+export { ReactComponent as Setting3 } from "./icons/setting3.svg";
+export { ReactComponent as Shapes } from "./icons/shapes.svg";
+export { ReactComponent as SheildDeny } from "./icons/sheild-cross.svg";
+export { ReactComponent as SheildSearch } from "./icons/shield-search.svg";
+export { ReactComponent as SheildUser } from "./icons/sheild-user.svg";
 
 export{
 SDK1,
