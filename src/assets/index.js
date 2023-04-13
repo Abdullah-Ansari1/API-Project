@@ -4,6 +4,9 @@ import SDK3 from './Sdk3.png';
 import SDK4 from './Sdk4.png';
 import ApiSetting from './icons/apiSetting.svg'
 
+export { ReactComponent as InfoHeader } from "./icons/info-header.svg";
+export { ReactComponent as Refresh } from "./icons/refresh.svg";
+
 export { ReactComponent as HE } from "./HE.svg";
 
 export { ReactComponent as PrinterLight } from "./icons/printer-light.svg";
@@ -50,6 +53,11 @@ export { ReactComponent as Shapes } from "./icons/shapes.svg";
 export { ReactComponent as SheildDeny } from "./icons/sheild-cross.svg";
 export { ReactComponent as SheildSearch } from "./icons/shield-search.svg";
 export { ReactComponent as SheildUser } from "./icons/sheild-user.svg";
+
+export { ReactComponent as Edit } from "./icons/edit.svg";
+export { ReactComponent as Trash } from "./icons/trash.svg";
+
+export { ReactComponent as DeleteInfo } from "./icons/Delete-Info.svg";
 
 export{
 SDK1,

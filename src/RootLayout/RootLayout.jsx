@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {DeleteModal,GenerateKeyModal,SubscribeApiModal,SubscriptionUpdateModal} from '../Components';
+import {AddApicategoryModal, DeleteApiCategoryModal, DeleteModal,EditApiCategoryModal,GenerateKeyModal,SubscribeApiModal,SubscriptionUpdateModal} from '../Components';
 import { SidebarMenu,MainNav } from "../common";
 import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
@@ -21,6 +21,9 @@ const RootLayout = () => {
     <GenerateKeyModal/>
     <SubscriptionUpdateModal/>
     <SubscribeApiModal/>
+    <EditApiCategoryModal/>
+    <AddApicategoryModal/>
+    <DeleteApiCategoryModal/>
       <SidebarMenu
         ChangeComponent={ChangeComponent}
         selectedComponent={selectedComponent}

@@ -260,9 +260,9 @@ h5 {
     width: 450px;
   }
 }
-.ant-input-affix-wrapper {
+/* .search-div .ant-input-affix-wrapper {
   border: none !important;
-}
+} */
 #searchSubscriptionApi {
   background-color: aliceblue;
 }
@@ -1842,4 +1842,191 @@ background: #dbdce0 !important;
 }
 .updateSubscription-Modal .ant-modal-footer {
   margin-top: 2rem !important;
+}
+
+/* Dashboard */
+
+/* API Categories */
+.ApiCategoriesMain{
+  margin: 1.5rem 0rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 4px rgba(22, 55, 90, 0.1);
+}
+.Header-Info-Main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Api-Categories-Search{
+  border: 1px solid #E6E9EF!important;
+  border-radius: 0;
+}
+.btn-api-category{
+  font-family: 'Poppins';
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.ApiCategoriesMain-head{
+  display: flex;
+  justify-content: space-between;
+}
+.add-refresh{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.edit-apiCategory path{
+  fill: var(--secondary-color-50);
+}
+.trash-apiCategory path{
+  fill: red;
+}
+.table-api-category{
+  margin-top: 1rem;
+}
+.table-api-category .ant-table-wrapper .ant-table-thead >tr>th{
+text-align: center;
+}
+.table-api-category .ant-table-tbody{
+text-align: center;
+}
+.main-api-Category{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.table-api-category
+  .ant-pagination
+  .ant-pagination-disabled
+  .ant-pagination-item-link {
+  color: white !important;
+  background: #dbdce0 !important;
+  font-size: 1rem;
+  border: none;
+}
+.table-api-category .ant-pagination .ant-pagination-item-link {
+  background: #fff !important;
+  font-size: 1rem;
+  color: #96a5b5 !important;
+  border: 1px solid #96a5b5;
+}
+.table-api-category .ant-pagination {
+  padding-right: 1rem;
+}
+.table-api-category .ant-pagination .ant-pagination-item {
+  background: white !important;
+  font-weight: 500 !important;
+  color: #96a5b5 !important;
+  border: 1px solid #96a5b5;
+  /* border: none !important; */
+}
+.table-api-category .ant-pagination .ant-pagination-item:hover {
+  background: aliceblue !important;
+}
+.table-api-category .ant-pagination .ant-pagination-item a {
+  font-weight: 500 !important;
+  color: #96a5b5 !important;
+  font-family: var(--body-font) !important;
+}
+.table-api-category .ant-pagination .ant-pagination-item-active {
+  background: #16375a !important;
+  font-weight: 500 !important;
+  color: #96a5b5 !important;
+  border: none !important;
+}
+.table-api-category .ant-pagination .ant-pagination-item-active:hover {
+  background: #16375a !important;
+}
+.table-api-category .ant-pagination .ant-pagination-item-active a {
+  color: #ffffff !important;
+}
+.table-apiCategory-total{
+position: absolute;
+left: 0;
+color: var(--gray-scale-divider);
+font-weight: 500;
+}
+.pagination-table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.pagination-table-div{
+  display: flex;
+  gap: 1rem;
+}
+.select-perpage{
+  display: flex;
+  color: var(--primary-color-50);
+  align-items: center;
+  gap: 1rem;
+}
+
+.total{
+  color:#A0A3BD;
+  font-weight: 500;
+}
+
+/* EditApi category Modal */
+@media (min-width: 700px) {
+  .EditApiCategory{
+    min-width: 650px;
+  }
+}
+
+.EditApiCategory .ant-input{
+  height: 2.8rem;
+  border: 1px solid var(--primary-color-50);
+  margin: 0.5rem 0rem;
+}
+.main-input-editApiCategory{
+  margin-top: 2rem;
+}
+.label-editApi{
+  color: var(--primary-color-50);
+  font-size: 1rem;
+}
+.label-editApi span{
+color: red;
+}
+.main-input-editApiCategory p{
+color: var(--primary-color-20);
+}
+.edit-apiCategory{
+  cursor: pointer;
+}
+.trash-apiCategory{
+  cursor: pointer;
+}
+
+/* Delete Modal Api category */
+.btn-delete{
+  border: none;
+  background: var(--indication-red);
+  color: var(--primary-color-00);
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+  font-family: var(--body-font);
+}
+.btn-cancel-apicategory{
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--indication-red);
+  color: var(--indication-red);
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+  font-family: var(--body-font);
 }

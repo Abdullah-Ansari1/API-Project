@@ -22,6 +22,7 @@ const MainNav = () => {
             prefix={<SearchIcon/>}
             id="searchInput"
             allowClear={true}
+            className="mainnav-Search"
             style={{ backgroundColor: "#D9E7EF" }}
           />
         </span>

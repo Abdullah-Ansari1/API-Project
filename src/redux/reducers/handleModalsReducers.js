@@ -5,6 +5,9 @@ const initialState = {
   openGenerateKeyModal:false,
   openSubscribeApiModal:false,
   openSubscriptionUpdateModal:false,
+  openEditApiCategoryModal:false,
+  openAddApiCategoryModal:false,
+  openDeleteApiCategoryModal:false,
 };
 
 const modalReducers = createSlice({
@@ -35,11 +38,29 @@ const modalReducers = createSlice({
         openSubscriptionUpdateModal: action.payload,
       };
     },
+    handleEditApiCategoryModal(state, action) {
+      return {
+        ...state,
+        openEditApiCategoryModal: action.payload,
+      };
+    },
+    handleAddApiCategoryModal(state, action) {
+      return {
+        ...state,
+        openAddApiCategoryModal: action.payload,
+      };
+    },
+    handleDeleteApiCategoryModal(state, action) {
+      return {
+        ...state,
+        openDeleteApiCategoryModal: action.payload,
+      };
+    },
   },
 });
 
 const { reducer, actions } = modalReducers;
 
-export const { handleDeleteModal,handleGenerateKeyModal,handleSubscribeApiModal,handleSubscriptionUpdateModal } = actions;
+export const { handleDeleteModal,handleGenerateKeyModal,handleSubscribeApiModal,handleSubscriptionUpdateModal,handleEditApiCategoryModal,handleAddApiCategoryModal,handleDeleteApiCategoryModal } = actions;
 
 export default reducer;

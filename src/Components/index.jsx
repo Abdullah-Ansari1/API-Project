@@ -11,3 +11,7 @@ export { default as DeleteModal } from './Modals/DeleteModal';
 export { default as GenerateKeyModal } from './Modals/GenerateKeyModal';
 export { default as SubscribeApiModal } from './Modals/SubscribeApiModal';
 export { default as SubscriptionUpdateModal } from './Modals/SubscriptionUpdateModal';
+export { default as EditApiCategoryModal } from './Modals/EditApiCategoryModal';
+export { default as AddApicategoryModal } from './Modals/AddApicategoryModal';
+export { default as DeleteApiCategoryModal } from './Modals/DeleteApiCategoryModal';
+export { default as HeaderInfo } from './DashboardComponents/HeaderInfo';

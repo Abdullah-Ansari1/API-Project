@@ -1,9 +1,10 @@
-import {SDK1,SDK2,SDK3,SDK4,ApiSetting} from '../assets/index';
+import {SDK1,SDK2,SDK3,SDK4,ApiSetting, Edit, Trash} from '../assets/index';
   import {
     StarFilled,
     CaretDownOutlined
   } from '@ant-design/icons';
 import { Select } from 'antd';
+
 
 
 // Grid Data
@@ -451,3 +452,150 @@ export const SDKS = [
       title:"Tags 7"
     },
   ]
+
+  // API ApiCategories
+  export const ApiCategoriesTableHead = [
+    {
+      title: 'Category Name',
+      dataIndex: 'category',
+      key: 'category',
+    },
+    {
+      title: 'Description',
+      dataIndex: 'description',
+      key: 'description',
+    },
+    {
+      title: 'Number of APIs',
+      dataIndex: 'number',
+      key: 'number',
+    },
+    {
+      title: 'Actions',
+      dataIndex: 'actions',
+      key: 'actions',
+    },
+  ];
+
+  // export const ApiCategoriesTableBody=[
+  //   {
+  //     key:"1",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"2",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"3",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"4",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"5",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"6",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"7",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"8",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"9",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     key:"10",
+  //     category:"Rest",
+  //     description:"Rest",
+  //     number:"1",
+  //     actions:(
+  //       <div className="main-api-Category">
+  //         <Edit className='edit-apiCategory'/>
+  //         <Trash className='trash-apiCategory'/>
+  //       </div>
+  //     ),
+  //   },
+  // ]
