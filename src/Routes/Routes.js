@@ -33,83 +33,83 @@ export const router = createBrowserRouter([
         element: <API />,
       },
       {
-        path: "/api",
+        path: "/devportal/apis",
         element: <API />,
       },
       {
-        path: "/api/overview",
+        path: "/devportal/api/overview",
         element: <APIOverview />,
       },
       {
-        path: "/api/subscription",
+        path: "/devportal/api/subscription",
         element: <APISubscription />,
       },
       {
-        path: "/api/tryout",
+        path: "/devportal/api/tryout",
         element: <TryOut />,
       },
       {
-        path: "/api/comments",
+        path: "/devportal/api/comments",
         element: <Comments />,
       },
       {
-        path: "/api/documentation",
+        path: "/devportal/api/documentation",
         element: <Documentation />,
       },
       {
-        path: "/api/sdks",
+        path: "/devportal/api/sdks",
         element: <SDKs />,
       },
       {
-        path: "/application",
+        path: "/devportal/applications",
         element: <Application />,
       },
       {
-        path: "/application/edit",
+        path: "/devportal/application/:id/edit",
         element: <EditApplication />,
       },
       {
-        path: "/application/create",
+        path: "/devportal/application/create",
         element: <CreateApplication />,
       },
       {
-        path: "/application/overview",
+        path: "/devportal/application/overview",
         element: <OverviewApplication />,
       },
       {
-        path: "/application/productionkeys",
+        path: "/devportal/application/productionkeys",
         element: <ProductionKeys />,
       },
       {
-        path: "/application/productionOauth2tokens",
+        path: "/devportal/application/productionOauth2tokens",
         element: <ProductionOAuth />,
       },
       {
-        path: "/application/productionapikeys",
+        path: "/devportal/application/productionapikeys",
         element: <ProductionApikeys />,
       },
       {
-        path: "/application/sandboxkeys",
+        path: "/devportal/application/sandboxkeys",
         element: <SandboxKeys />,
       },
       {
-        path: "/application/sandboxOauth2tokens",
+        path: "/devportal/application/sandboxOauth2tokens",
         element: <SandboxOAuth />,
       },
       {
-        path: "/application/sandboxapikeys",
+        path: "/devportal/application/sandboxapikeys",
         element: <SandboxApikey />,
       },
       {
-        path: "/application/subscription",
+        path: "/devportal/application/subscription",
         element: <ApplicationSubscription />,
       },
       {
-        path: "/dashboard",
+        path: "/devportal/dashboard",
         element: <Dashboard />,
       },
       {
-        path: "/dashboard/apicategories",
+        path: "/devportal/dashboard/apicategories",
         element: <APICategories />,
       },
     ],

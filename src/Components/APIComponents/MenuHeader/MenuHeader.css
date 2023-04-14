@@ -58,3 +58,7 @@ row-gap: 1rem;
     font-family: var(--body-font) !important;
     align-items: center;
   }
+
+  .download-csv{
+    margin-top: 7px;
+  }

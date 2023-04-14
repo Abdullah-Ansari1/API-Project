@@ -21,7 +21,7 @@ const SidebarMenu = ({
 
   useEffect(() => {
     let pathName = window.location.pathname;
-    if (pathName.includes("/api")) {
+    if (pathName.includes("/apis")) {
       handleChangeMenu("api");
       setMenu(ApiMenu);
       ChangeComponent(pathName);
@@ -43,18 +43,18 @@ const SidebarMenu = ({
     if (menu === DashboardMenu) {
       ChangeComponent("");
       setMenu(ApiMenu);
-      navigate("/api");
+      navigate("/devportal/apis");
     } else {
       ChangeComponent("");
       setMenu(DashboardMenu);
-      navigate("/dashboard");
+      navigate("/devportal/dashboard");
     }
   };
 
   const onClick = (e) => {
     if (menu === DashboardMenu && e.key !== "/dashboard/apicategories") {
       ChangeComponent(e.key);
-      navigate("/dashboard");
+      navigate("/devportal/dashboard");
     } else {
       navigate(e.key);
       ChangeComponent(e.key);
@@ -88,7 +88,7 @@ const SidebarMenu = ({
                 handleChangeMenu("api");
                 ChangeComponent("");
                 setMenu(ApiMenu);
-                navigate("/api");
+                navigate("/devportal/apis");
               }}
             >
               Api's
@@ -103,7 +103,7 @@ const SidebarMenu = ({
                 handleChangeMenu("application");
                 setMenu(ApplicationMenu);
                 ChangeComponent("");
-                navigate("/application");
+                navigate("/devportal/applications");
               }}
             >
               {windowWidth > 991 ? "Applications" : "App.."}

@@ -1,4 +1,5 @@
 import React from "react";
+import { CSVLink, CSVDownload } from "react-csv";
 import { CaretDownOutlined } from "@ant-design/icons";
 import {
   CodeIcon,
@@ -13,7 +14,9 @@ import {
 
 import { Select } from "antd";
 import "./MenuHeader.css";
+import { csvData } from "../../../constants/dummyData";
 const MenuHeader = ({ handleView, view }) => {
+ 
   return (
     <div className="Menu-Header-Container">
       <div className="Menu-Header-Inner">
@@ -27,7 +30,8 @@ const MenuHeader = ({ handleView, view }) => {
       <div className="Menu-Header-Inner">
         {view === "ListView" && (
           <>
-            <DocumentDownloadIcon className="ListViewIcons" />
+          <CSVLink  data={csvData} target="_blank" className={"download-csv"}> <DocumentDownloadIcon className="ListViewIcons" /></CSVLink >
+           
             <PrinterIcon className="ListViewIcons" />
             <TaskSquareIcon className="ListViewIcons" />
             <div>

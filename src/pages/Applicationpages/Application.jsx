@@ -67,7 +67,7 @@ const navigate=useNavigate();
             src={Edit}
             alt="Edit"
             className="myapplication-edit-icon"
-            onClick={() => navigate("/application/edit")}
+            onClick={() => navigate(`/devportal/application/153453453453/edit`)}
           />
           <img
             src={Trash}
@@ -93,7 +93,7 @@ const navigate=useNavigate();
             src={Edit}
             alt="Edit"
             className="myapplication-edit-icon"
-            onClick={() => navigate("/application/edit")}
+            onClick={() => navigate(`/devportal/application/1534454553453453/edit`)}
           />
           <img
             src={Trash}
@@ -119,7 +119,7 @@ const navigate=useNavigate();
           subscribe to one API Multiple times and allows unlimited access by
           defaults
         </p>
-        <Link to="/application/create">
+        <Link to="/devportal/application/create">
         <span className="create-application-btn">Create an Application</span>
         </Link>
         </div>

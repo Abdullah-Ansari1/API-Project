@@ -35,23 +35,23 @@ function getItem(label, key, icon, children) {
 }
 
 export const ApiMenu = [
-  getItem("Overview", "/api/overview", <OverViewIcon />),
-  getItem("Subscriptions", "/api/subscription", <SubscriptionIcon />),
-  getItem("Try Out", "/api/tryout", <SandboxKeyIcon />),
-  getItem("Comments", "/api/comments", <CommentIcon />),
-  getItem("Documentation", "/api/documentation", <DocumentIcon />),
-  getItem("SDKs", "/api/sdks", <SdkIcon />),
+  getItem("Overview", "/devportal/api/overview", <OverViewIcon />),
+  getItem("Subscriptions", "/devportal/api/subscription", <SubscriptionIcon />),
+  getItem("Try Out", "/devportal/api/tryout", <SandboxKeyIcon />),
+  getItem("Comments", "/devportal/api/comments", <CommentIcon />),
+  getItem("Documentation", "/devportal/api/documentation", <DocumentIcon />),
+  getItem("SDKs", "/devportal/api/sdks", <SdkIcon />),
 
 ];
 export const ApplicationMenu = [
-  getItem("Overview", "/application/overview", <OverViewIcon />),
-  getItem("Production Keys", "/application/productionkeys", <ProductionKeysIcon />),
-  getItem("OAuth2 Tokens", "/application/productionOauth2tokens", <OuathTokenIcon />),
-  getItem("API Keys", "/application/productionapikeys", <ApiKeyIcon />),
-  getItem("Sandbox Keys", "/application/sandboxkeys", <SandboxKeyIcon />),
-  getItem("Oauth2 Tokens", "/application/sandboxOauth2tokens", <OuathTokenIcon />),
-  getItem("API Keys", "/application/sandboxapikeys", <ApiKeyIcon />),
-  getItem("Subscription", "/application/subscription", <SubscriptionIcon />),
+  getItem("Overview", "/devportal/application/overview", <OverViewIcon />),
+  getItem("Production Keys", "/devportal/application/productionkeys", <ProductionKeysIcon />),
+  getItem("OAuth2 Tokens", "/devportal/application/productionOauth2tokens", <OuathTokenIcon />),
+  getItem("API Keys", "/devportal/application/productionapikeys", <ApiKeyIcon />),
+  getItem("Sandbox Keys", "/devportal/application/sandboxkeys", <SandboxKeyIcon />),
+  getItem("Oauth2 Tokens", "/devportal/application/sandboxOauth2tokens", <OuathTokenIcon />),
+  getItem("API Keys", "/devportal/application/sandboxapikeys", <ApiKeyIcon />),
+  getItem("Subscription", "/devportal/application/subscription", <SubscriptionIcon />),
 
 ];
 export const DashboardMenu = [
@@ -64,7 +64,7 @@ export const DashboardMenu = [
     getItem("Deny Policies", "denypolicies", <SheildDeny />),
   ]),
   getItem("Gateways", "gateways", <Gateway />),
-  getItem("API Categories", "/dashboard/apicategories", <Shapes />),
+  getItem("API Categories", "/devportal/dashboard/apicategories", <Shapes />),
   getItem("Key Managers", "keymanagers", <SheildUser />),
   getItem("Tasks", "sub2", null, [
     getItem("User Creation", "9", <Profile2User />),

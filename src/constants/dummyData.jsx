@@ -52,34 +52,45 @@ export const GridViewData = [
       {
         title: 'Name',
         dataIndex: 'name',
+        index:0,
         key: 'name',
         render: (text) => <a className='list-link'>{text}</a>,
-    
+       active:true
       },
       {
         title: 'Version',
+        index:1,
         dataIndex: 'version',
         key: 'version',
+        active:true
       },
       {
         title: 'Context',
+        index:2,
         dataIndex: 'context',
         key: 'context',
+        active:true
       },
       {
         title: 'Provider/Business Owner',
+        index:3,
         dataIndex: 'provider',
         key: 'provider',
+        active:true
       },
       {
         title: 'Type',
+        index:4,
         dataIndex: 'type',
         key: 'type',
+        active:true
       },
       {
         title: 'Rating',
+        index:5,
         dataIndex: 'rating',
         key: 'rating',
+        active:true
       },
     ];
   
@@ -453,6 +464,7 @@ export const SDKS = [
     },
   ]
 
+<<<<<<< Updated upstream
   // API ApiCategories
   export const ApiCategoriesTableHead = [
     {
@@ -599,3 +611,12 @@ export const SDKS = [
   //     ),
   //   },
   // ]
+=======
+
+export  const csvData = [
+    ["firstname", "lastname", "email"],
+    ["Ahmed", "Tomi", "ah@smthing.co.com"],
+    ["Raed", "Labes", "rl@smthing.co.com"],
+    ["Yezzi", "Min l3b", "ymin@cocococo.com"]
+  ];
+>>>>>>> Stashed changes
